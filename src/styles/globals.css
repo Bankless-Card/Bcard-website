@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -91,7 +90,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
- 
+
 }
 
 a {
