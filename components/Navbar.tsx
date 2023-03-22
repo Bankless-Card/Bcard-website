@@ -16,7 +16,7 @@ const Navbar = () => {
                   />
          </div>
          <div className='flex gap-5'>
-            <a>For DAOs</a>
+            <Link href="/for-daos">For DAOs</Link>
             <a>For Investors</a>
             <a>Blog</a>
             <a>Contact Us</a>
