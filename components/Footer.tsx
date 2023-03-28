@@ -56,10 +56,12 @@ const Footer = () => {
       </div>
 
       <div className="mt-[7rem]">
-        <hr className="border-[#313131]" />
+        <div className="pb-[3rem]">
+          <hr className="border-[#313131]" />
+        </div>
         <div className="flex justify-between items-center">
           <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
-          <div className="flex items-center gap-3 mt-[3rem] ">
+          <div className="flex items-center gap-3  ">
           <div>
           <Image
             priority
