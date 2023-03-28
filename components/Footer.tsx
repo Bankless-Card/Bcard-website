@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="mt-[10rem]  pb-[3rem] ">
-      <div className="flex justify-between items-center  w-full">
+    <section className="mt-[10rem]  pb-[3rem] mx-[7.5rem]">
+      <div className=" flex justify-between  ">
         <div>
           <Image
             priority
@@ -22,9 +22,9 @@ const Footer = () => {
           <div>For DAOs</div>
           <div>For Investors</div>
         </div>
-        <div className="flex flex-col gap-[1rem]">
-          <h1>Information</h1>
-          <div>FAQ</div>
+        <div className="flex flex-col gap-[1rem] ">
+          <h1 className="">Information</h1>
+          <div className="">FAQ</div>
           <div>Blog</div>
           <div>Support</div>
           <div>Privacy Policy</div>
@@ -55,11 +55,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
-        <hr />
-        <div className="flex justify-between items-center ">
-          <p className="text-[0.875rem] leading-[1rem] font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
-          <div className="flex items-center gap-3 mt-[3rem]">
+      <div className="mt-[7rem]">
+        <hr className="border-[#313131]" />
+        <div className="flex justify-between items-center">
+          <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
+          <div className="flex items-center gap-3 mt-[3rem] ">
           <div>
           <Image
             priority
