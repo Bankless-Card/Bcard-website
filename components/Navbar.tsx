@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className='flex justify-between items-center p-[3rem]'>
-         <div className=''>
+         <Link href="/" className=''>
              <Image
                     priority
                     src="/images/logo.svg"
@@ -14,10 +14,10 @@ const Navbar = () => {
                     width={179}
                     alt="bankless card"
                   />
-         </div>
+         </Link>
          <div className='flex gap-5'>
             <Link href="/for-daos">For DAOs</Link>
-            <a>For Investors</a>
+            <Link href="/for-investors">For Investors</Link>
             <a>Blog</a>
             <a>Contact Us</a>
          </div>
