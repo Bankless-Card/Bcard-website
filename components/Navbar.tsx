@@ -18,8 +18,8 @@ const Navbar = () => {
          <div className='flex gap-5'>
             <Link href="/for-daos">For DAOs</Link>
             <Link href="/for-investors">For Investors</Link>
-            <a>Blog</a>
-            <a>Contact Us</a>
+            <a  href="https://banklesscard.mirror.xyz/" target="_blank" rel="noreferrer">Blog</a>
+            <Link href="/contact-us">Contact Us</Link>
          </div>
     </nav>
   )
