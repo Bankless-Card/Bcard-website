@@ -18,17 +18,17 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-[1rem]">
           <h1>Company</h1>
-          <div>About us</div>
-          <div>For DAOs</div>
-          <div>For Investors</div>
+          {/* <div>About us</div> */}
+          <Link href="/for-daos">For DAOs</Link>
+          <Link href="/for-investors">For Investors</Link>
         </div>
         <div className="flex flex-col gap-[1rem] ">
           <h1 className="">Information</h1>
-          <div className="">FAQ</div>
-          <div>Blog</div>
-          <div>Support</div>
-          <div>Privacy Policy</div>
-          <div>Terms & Conditions</div>
+          {/* <div className="">FAQ</div> */}
+          <a href="https://banklesscard.mirror.xyz/" target="_blank" rel="noreferrer">Blog</a>
+          {/* <div>Support</div> */}
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          {/* <div>Terms & Conditions</div> */}
         </div>
         <div className="flex flex-col gap-[1rem]">
           <h1>Install App</h1>
@@ -63,36 +63,42 @@ const Footer = () => {
           <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
           <div className="flex items-center gap-3  ">
           <div>
-          <Image
-            priority
-            src="/images/twitter.svg"
-            className=""
-            height={24}
-            width={24}
-            alt="twitter"
-          />
+          <a  href="https://twitter.com/BanklessCard" target="_blank" rel="noreferrer">
+            <Image
+              priority
+              src="/images/twitter.svg"
+              className=""
+              height={24}
+              width={24}
+              alt="twitter"
+            />
+          </a>
         </div>
 
         <div>
-          <Image
-            priority
-            src="/images/discord.svg"
-            className=""
-            height={24}
-            width={24}
-            alt="discord"
-          />
+          <a href="https://discord.gg/bankless" target="_blank" rel="noreferrer">
+            <Image
+              priority
+              src="/images/discord.svg"
+              className=""
+              height={24}
+              width={24}
+              alt="discord"
+            />
+          </a>
         </div>
 
         <div>
-          <Image
-            priority
-            src="/images/github.svg"
-            className=""
-            height={24}
-            width={24}
-            alt="github"
-          />
+          <a href="https://github.com/Bankless-Card" target="_blank" rel="noreferrer" >
+            <Image
+              priority
+              src="/images/github.svg"
+              className=""
+              height={24}
+              width={24}
+              alt="github"
+            />
+          </a>
         </div>
           </div>
         </div>
