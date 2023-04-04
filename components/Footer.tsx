@@ -17,21 +17,21 @@ const Footer = () => {
           />
         </div>
         <div className="flex flex-col gap-[1rem]">
-          <h1>Company</h1>
-          {/* <div>About us</div> */}
+          <h1 className="font-semibold text-lg leading-[1.375rem]">Company</h1>
+          <Link href="/">Home</Link>
           <Link href="/for-daos">For DAOs</Link>
           <Link href="/for-investors">For Investors</Link>
         </div>
         <div className="flex flex-col gap-[1rem] ">
-          <h1 className="">Information</h1>
+          <h1 className="font-semibold text-lg leading-[1.375rem]">Information</h1>
           {/* <div className="">FAQ</div> */}
           <a href="https://banklesscard.mirror.xyz/" target="_blank" rel="noreferrer">Blog</a>
           {/* <div>Support</div> */}
           <Link href="/privacy-policy">Privacy Policy</Link>
           {/* <div>Terms & Conditions</div> */}
         </div>
-        <div className="flex flex-col gap-[1rem]">
-          <h1>Install App</h1>
+        {/* <div className="flex flex-col gap-[1rem]">
+          <h1 className="font-semibold text-lg leading-[1.375rem]">Install App</h1>
           <div>
             <Image
               priority
@@ -52,7 +52,7 @@ const Footer = () => {
               alt="play store"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-[7rem]">
