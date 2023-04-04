@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
+import TestimonialCarousel from "components/TestimonialCarousel";
 
 const LandingPage = () => {
   return (
@@ -137,7 +138,10 @@ const LandingPage = () => {
         </div>
         <div></div>
       </section>
-
+      <section className="mt-[10rem]">
+        <h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">What Our Users Say</h1>
+        <TestimonialCarousel />
+      </section>
      <ContactUs />
      <Footer />
     </div>
