@@ -10,7 +10,7 @@ const LandingPage = () => {
     <div className="px-[3rem] ">
       <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] ">
         <div className="w-[50%] ">
-          <h1 className="text-5xl leading-[3.625rem] font-bold text-center w-[20.688rem] ">
+          <h1 className="text-5xl leading-[3.625rem] font-bold text-center  ">
             The card made for DAOs, by BanklessDAO.
           </h1>
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center">
