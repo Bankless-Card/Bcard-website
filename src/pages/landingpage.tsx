@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
+import TestimonialCarousel from "components/TestimonialCarousel";
 
 const LandingPage = () => {
   return (
     <div className="px-[3rem] ">
-      <section className="flex justify-between items-center mt-[7rem]">
-        <div className="w-[50%]">
-          <h1 className="text-5xl leading-[3.625rem] font-bold text-center">
+      <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] ">
+        <div className="w-[50%] ">
+          <h1 className="text-5xl leading-[3.625rem] font-bold text-center  ">
             The card made for DAOs, by BanklessDAO.
           </h1>
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center">
@@ -137,7 +138,10 @@ const LandingPage = () => {
         </div>
         <div></div>
       </section>
-
+      <section className="mt-[10rem]">
+        <h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">What Our Users Say</h1>
+        <TestimonialCarousel />
+      </section>
      <ContactUs />
      <Footer />
     </div>
