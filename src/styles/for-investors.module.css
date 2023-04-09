@@ -1,0 +1,14 @@
+.header-text{
+    padding: 0 40px;
+}
+.title-text{
+    padding: 0 40px;
+}
+
+@media (max-width: 767px){
+    .btn-group{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
