@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from '@/styles/Navbar.module.css'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   };
 
   const isActive = (pathname: string) => {
-    return router.pathname === pathname ? "text-purple-500" : "";
+    return router.pathname === pathname ? `text-purple-500 ${styles['border-bottom']}` : `${styles['border-hover-bottom']}`
   };
 
   return (
@@ -34,6 +35,7 @@ const Navbar = () => {
           href="https://banklesscard.mirror.xyz/"
           target="_blank"
           rel="noreferrer"
+          className={`${styles['border-hover-bottom']}`}
         >
           Blog
         </a>
