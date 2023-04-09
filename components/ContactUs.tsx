@@ -49,10 +49,7 @@ const ContactUs = () => {
           <div>
             <div className="flex flex-col items-center">
               <label>Write a message</label>
-              <input
-                type=""
-                className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[49.5rem] h-[9rem] bg-inherit"
-              />
+              <textarea className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[49.5rem] h-[9rem] bg-inherit"></textarea>
             </div>
           </div>
           <div className="flex justify-center">
