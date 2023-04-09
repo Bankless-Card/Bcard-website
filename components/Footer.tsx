@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import styles from '@/styles/Footer.module.css'
 
 const Footer = () => {
   return (
     <section className="mt-[10rem]  pb-[3rem] mx-[7.5rem]">
-      <div className=" flex justify-between  ">
+      <div className={` flex justify-between ${styles['content']} `}>
         <div>
           <Image
             priority
@@ -59,7 +60,7 @@ const Footer = () => {
         <div className="pb-[3rem]">
           <hr className="border-[#313131]" />
         </div>
-        <div className="flex justify-between items-center">
+        <div className={`flex justify-between items-center ${styles['content-down']}`}>
           <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
           <div className="flex items-center gap-3  ">
           <div>
