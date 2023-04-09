@@ -8,7 +8,7 @@ import TestimonialCarousel from "components/TestimonialCarousel";
 const LandingPage = () => {
   return (
     <div className="px-[3rem] ">
-      <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] ">
+      <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem]">
         <div className="w-[50%] ">
           <h1 className="text-5xl leading-[3.625rem] font-bold text-center  ">
             The card made for DAOs, by BanklessDAO.
