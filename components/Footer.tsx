@@ -31,7 +31,7 @@ const Footer = () => {
           <Link href="/privacy-policy">Privacy Policy</Link>
           {/* <div>Terms & Conditions</div> */}
         </div>
-        {/* <div className="flex flex-col gap-[1rem]">
+        {/* <div className={`flex flex-col gap-[1rem] pr-40 ${styles['remove-padding']}`}>
           <h1 className="font-semibold text-lg leading-[1.375rem]">Install App</h1>
           <div>
             <Image
