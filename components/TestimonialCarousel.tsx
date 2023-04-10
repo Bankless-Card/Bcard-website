@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Glide from "@glidejs/glide";
 import "tailwindcss/tailwind.css";
+import styles from '@/styles/TestimonialCarousel.module.css'
 
 const TestimonialCarousel = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const TestimonialCarousel = () => {
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
-            <div className="border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] min-h-[20rem]">
+            <div className={`border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] h-[20rem] ${styles['make-contain']}`}>
               <Image
                 priority
                 src="/images/quote.svg"
@@ -48,7 +49,7 @@ const TestimonialCarousel = () => {
             </div>
           </li>
           <li className="glide__slide">
-            <div className="border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] min-h-[20rem]">
+            <div className={`border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] h-[20rem] ${styles['make-contain']}`}>
               <Image
                 priority
                 src="/images/quote.svg"
@@ -67,7 +68,7 @@ const TestimonialCarousel = () => {
             </div>
           </li>
           <li className="glide__slide">
-            <div className="border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] min-h-[20rem]">
+            <div className={`border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] h-[20rem] ${styles['make-contain']}`}>
               <Image
                 priority
                 src="/images/quote.svg"
@@ -86,7 +87,7 @@ const TestimonialCarousel = () => {
             </div>
           </li>
           <li className="glide__slide">
-            <div className="border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] min-h-[20rem]">
+            <div className={`border-2 border-[#7776BC] rounded-t-[12.5rem] p-[2rem] flex flex-col items-center gap-[2rem] h-[20rem] ${styles['make-contain']}`}>
               <Image
                 priority
                 src="/images/quote.svg"
@@ -101,11 +102,11 @@ const TestimonialCarousel = () => {
                 contribute towards missions they care about.
               </p>
               <p className="font-bold">IsraelRex</p>
-            </div>
+            </div>  
           </li>
         </ul>
       </div>
     </div>
   );
 };
-export default TestimonialCarousel;
+export default TestimonialCarousel;  
