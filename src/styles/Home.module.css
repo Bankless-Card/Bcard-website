@@ -1,3 +1,7 @@
+/* add side circle gradient in the landing page header to blend with the coloring */
+/* .side-gradient{
+  display: none!important;
+} */
 .main {
   display: flex;
   flex-direction: column;

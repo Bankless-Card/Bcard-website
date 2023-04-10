@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from '@/styles/Navbar.module.css'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const isActive = (pathname: string) => {
+    return router.pathname === pathname ? `text-purple-500 ${styles['border-bottom']}` : `${styles['border-hover-bottom']}`
   };
 
   return (
@@ -22,16 +29,17 @@ const Navbar = () => {
         />
       </Link>
       <div className="hidden md:flex gap-5">
-        <Link href="/for-daos">For DAOs</Link>
-        <Link href="/for-investors">For Investors</Link>
+        <Link href="/for-daos" className={isActive("/for-daos")}>For DAOs</Link>
+        <Link href="/for-investors" className={isActive("/for-investors")}>For Investors</Link>
         <a
           href="https://banklesscard.mirror.xyz/"
           target="_blank"
           rel="noreferrer"
+          className={`${styles['border-hover-bottom']}`}
         >
           Blog
         </a>
-        <Link href="/contact-us">Contact Us</Link>
+        <Link href="/contact-us" className={isActive("/contact-us")}>Contact Us</Link>
       </div>
       <div className="md:hidden">
         <button
