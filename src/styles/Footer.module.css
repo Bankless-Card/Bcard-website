@@ -11,4 +11,7 @@
         text-align: center;
         gap: 3rem;
     }
+    .remove-padding{
+        padding: 0;
+    }
 }
