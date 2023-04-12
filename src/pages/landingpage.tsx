@@ -4,19 +4,23 @@ import Link from "next/link";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
 import TestimonialCarousel from "components/TestimonialCarousel";
+import styles from "@/styles/landingpage.module.css"
+import { useMediaQuery } from '@chakra-ui/react';
 
 const LandingPage = () => {
+  const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
+
   return (
     <div className="px-[3rem] ">
       <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem]">
-        <div className="w-[50%] ">
-          <h1 className="text-5xl leading-[3.625rem] font-bold text-center  ">
+        <div className={`w-[50%] ${styles['text-contain']}`}>
+          <h1 className={`text-5xl leading-[3.625rem] font-bold text-center ${styles['title']}`}>
             The card made for DAOs, by BanklessDAO.
           </h1>
-          <p className="text-lg leading-[1.375rem] mt-[2rem] text-center">
+          <p className={`text-lg leading-[1.375rem] mt-[2rem] text-center ${styles['text']}`}>
             Pay in fiat, earn DAO tokens. Support your DAO with every swipe.
           </p>
-          <form className="flex gap-4  mt-[2rem] justify-center">
+          <form className={`flex gap-4  mt-[2rem] justify-center ${styles['form-contain']}`}>
             <input
               type="email"
               placeholder="Email"
@@ -27,7 +31,7 @@ const LandingPage = () => {
             </button>
           </form>
         </div>
-        <div>
+        <div className={`${styles['card-img']}`}>
           <Image
             priority
             src="/images/bcard.svg"
@@ -39,14 +43,14 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="mt-[13rem] flex justify-evenly items-center overflow-hidden  w-full">
-        <div className="flex flex-col gap-[4rem]  w-[33.33%]">
-          <div className="max-w-[24rem]">
+      <section className={`mt-[13rem] flex justify-evenly items-center overflow-hidden  w-full ${styles['section2']}`}>
+        <div className={`flex flex-col gap-[4rem]  w-[33.33%] ${styles['flex-contain']}`}>
+          <div className={`max-w-[24rem]`}>
             <div>
               <Image
                 priority
                 src="/images/earn.svg"
-                className=""
+                className={`${styles['svg']}`}
                 height={100}
                 width={100}
                 alt="earn"
@@ -62,12 +66,12 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div className="max-w-[24rem]">
+          <div className={`max-w-[24rem]`}>
             <div>
               <Image
                 priority
                 src="/images/onboard.svg"
-                className=""
+                className={`${styles['svg']}`}
                 height={100}
                 width={100}
                 alt="onboard"
@@ -84,24 +88,31 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className=" w-[33.33%] flex justify-center items-center">
-          <Image
+        <div className={`w-[33.33%] flex justify-center items-center ${styles['phone-icon']}`}>
+          {ismobileScreen ? <Image
             priority
             src="/images/phone.svg"
             className=""
-            height={379}
-            width={187.31}
             alt="bankless card"
-          />
+            height={379}
+            width={339}
+          /> : <Image
+          priority
+          src="/images/phone.svg"
+          className=""
+          alt="bankless card"
+          height={379}
+          width={250}
+        />}
         </div>
 
-        <div className="flex flex-col gap-[4rem]  w-[33.33%] items-end ">
+        <div className={`flex flex-col gap-[4rem]  w-[33.33%] items-end ${styles['flex-contain']}`}>
           <div className="max-w-[24rem]">
             <div>
               <Image
                 priority
                 src="/images/support.svg"
-                className=""
+                className={`${styles['svg']}`}
                 height={100}
                 width={100}
                 alt="support"
@@ -121,7 +132,7 @@ const LandingPage = () => {
               <Image
                 priority
                 src="/images/community.svg"
-                className=""
+                className={`${styles['svg']}`}
                 height={100}
                 width={100}
                 alt="community"
