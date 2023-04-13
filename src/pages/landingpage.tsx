@@ -11,22 +11,23 @@ const LandingPage = () => {
   const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div className="px-[3rem] ">
-      <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem]">
+    <div>
+      <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] px-[3rem]">
         <div className={`w-[50%] ${styles['text-contain']}`}>
-          <h1 className={`text-5xl leading-[3.625rem] font-bold text-center ${styles['title']}`}>
+          <div className={`${styles['gradient-header']}`}></div>
+          <h1 className={`text-5xl leading-[3.625rem] font-bold text-center relative z-50 ${styles['title']}`}>
             The card made for DAOs, by BanklessDAO.
           </h1>
-          <p className={`text-lg leading-[1.375rem] mt-[2rem] text-center ${styles['text']}`}>
+          <p className={`text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 ${styles['text']}`}>
             Pay in fiat, earn DAO tokens. Support your DAO with every swipe.
           </p>
           <form className={`flex gap-4  mt-[2rem] justify-center ${styles['form-contain']}`}>
             <input
               type="email"
               placeholder="Email"
-              className="border border-gray-400 px-4 py-2 rounded-md w-[18.25rem]"
+              className="border border-gray-400 px-4 py-2 rounded-md w-[18.25rem] text-black z-50"
             />
-            <button className="w-[11.707rem] h-[2.719rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.438rem]">
+            <button className="w-[11.707rem] h-[2.719rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.438rem] z-50">
               Join our waitlist
             </button>
           </form>
@@ -41,9 +42,10 @@ const LandingPage = () => {
             alt="bankless card"
           />
         </div>
+        <div className={`${styles['gradient-header-strip']}`}></div>
       </section>
 
-      <section className={`mt-[13rem] flex justify-evenly items-center overflow-hidden  w-full ${styles['section2']}`}>
+      <section className={`mt-[13rem] flex justify-evenly items-center overflow-hidden px-[3rem] w-full ${styles['section2']}`}>
         <div className={`flex flex-col gap-[4rem]  w-[33.33%] ${styles['flex-contain']}`}>
           <div className={`max-w-[24rem]`}>
             <div>
@@ -147,10 +149,12 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div></div>
+        <div className={`${styles['gradient-bottom-strip']}`}></div>
       </section>
-      <section className="mt-[10rem]">
+      <section className={`mt-[10rem] ${styles['carousel-section']}`}>
         <h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">What Our Users Say</h1>
+        <div className={`${styles['ellipse1']}`}></div>
+        <div className={`${styles['ellipse2']}`}></div>
         <TestimonialCarousel />
       </section>
      <ContactUs />

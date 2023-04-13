@@ -58,6 +58,7 @@ const ContactUs = () => {
             Submit
             </button>
           </div>
+          <div className={`${styles['ellipse3']}`}></div> 
         </form>
       </section>
     </>
