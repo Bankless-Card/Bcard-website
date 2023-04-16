@@ -45,13 +45,17 @@
 }
 
 @media (max-width: 767px){
-    .ellipse3{
-        width: 100%;
-        height: 50%;
+    .form{
+        position: relative;
+    }
+    .ellipse3::after{
+        content: "";
+        width: 400px;
+        height: 500px;
         background: #5DD9C1;
         position: absolute;
-        right: 0;
-        top: 950%;
+        right: -30%;
+        bottom: 20%;
         opacity: 0.3;
         filter: blur(200px);
     }
