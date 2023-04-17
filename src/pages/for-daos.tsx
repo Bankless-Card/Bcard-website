@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "components/Navbar";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
+import styles from "@/styles/for-daos.module.css"
 
 
 const ForDaos = () => {
@@ -11,15 +12,17 @@ const ForDaos = () => {
     <div>
       <Navbar />
       <section>
-        <h1 className="text-[2.25rem] leading-[2.723rem] font-semibold text-center max-[767px]:p-[30px]">
+      <div className={`${styles['ellipse1']}`}></div>
+      <div className={`${styles['ellipse2']}`}></div>
+        <h1 className="text-[2.25rem] leading-[2.723rem] font-semibold text-center max-[767px]:p-[30px] relative">
           Give your community a way to support your cause.
         </h1>
-        <p className="text-lg leading-[1.361rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto max-[767px]:p-[30px]">
+        <p className="text-lg leading-[1.361rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto max-[767px]:p-[30px] relative">
           BanklessDAO is proud to be partnering with other DAOs, creating a
           community card for members to earn rewards in their native tokens with
           every swipe.
         </p>
-        <div className="mt-[3rem] flex justify-center gap-[3rem] p-[30px] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center  max-[767px]:mb-0">
+        <div className="mt-[3rem] flex justify-center gap-[3rem] p-[30px] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center  max-[767px]:mb-0 relative">
           <div className="max-w-[23.875rem] p-[2rem]  border-4 border-purple-600 border-gradient-to-r">
             <h1 className="font-medium text-2xl leading-[1.8rem] text-center">
               Support your tokenomics
@@ -42,7 +45,7 @@ const ForDaos = () => {
           </div>
         </div>
 
-        <div className="mt-[8rem] flex justify-center gap-[3.6rem] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center  max-[767px]:mb-0">
+        <div className="mt-[8rem] flex justify-center gap-[3.6rem] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center  max-[767px]:mb-0 relative">
           <div>
             <div>
               <Image
