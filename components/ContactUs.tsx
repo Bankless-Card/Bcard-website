@@ -10,7 +10,7 @@ const ContactUs = () => {
         <h1 className="text-center font-semibold text-[2rem] leading-[2.421rem]">
           Contact Us
         </h1>
-        <form className=" flex flex-col gap-[3rem] mt-[3rem]">
+        <form className={`flex flex-col gap-[3rem] mt-[3rem] ${styles['form']}`}>
           <div className={`flex justify-center items-center gap-[3rem] ${styles['custom-input']}`}>
             <div className={`flex flex-col ${styles['custom-col']}`}>
               <label className={`${styles['label']}`}>Name</label>
@@ -58,7 +58,7 @@ const ContactUs = () => {
             Submit
             </button>
           </div>
-          <div className={`${styles['ellipse3']}`}></div> 
+          <div className={`${styles['ellipse3']}`}></div>
         </form>
       </section>
     </>

@@ -13,15 +13,15 @@ const LandingPage = () => {
   return (
     <div>
       <section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] px-[3rem]">
-        <div className={`w-[50%] ${styles['text-contain']}`}>
+        <div className="w-[50%] max-[767px]:w-full">
           <div className={`${styles['gradient-header']}`}></div>
-          <h1 className={`text-5xl leading-[3.625rem] font-bold text-center relative z-50 ${styles['title']}`}>
+          <h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
             The card made for DAOs, by BanklessDAO.
           </h1>
-          <p className={`text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 ${styles['text']}`}>
+          <p className="text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 max-[767px]:leading-[130%]">
             Pay in fiat, earn DAO tokens. Support your DAO with every swipe.
           </p>
-          <form className={`flex gap-4  mt-[2rem] justify-center ${styles['form-contain']}`}>
+          <form className="flex gap-4  mt-[2rem] justify-center max-[767px]:flex-col max-[767px]:items-center max-[767px]:pb-[20px] max-[767px]:justify-center">
             <input
               type="email"
               placeholder="Email"
@@ -32,7 +32,7 @@ const LandingPage = () => {
             </button>
           </form>
         </div>
-        <div className={`${styles['card-img']}`}>
+        <div className="max-[767px]:hidden">
           <Image
             priority
             src="/images/bcard.svg"
@@ -45,14 +45,14 @@ const LandingPage = () => {
         <div className={`${styles['gradient-header-strip']}`}></div>
       </section>
 
-      <section className={`mt-[13rem] flex justify-evenly items-center overflow-hidden px-[3rem] w-full ${styles['section2']}`}>
-        <div className={`flex flex-col gap-[4rem]  w-[33.33%] ${styles['flex-contain']}`}>
+      <section className="mt-[13rem] flex justify-evenly items-center overflow-hidden px-[3rem] w-full max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center max-[767px]:gap-[4rem] max-[767px]:mt-[auto]">
+        <div className="flex flex-col gap-[4rem]  w-[33.33%] max-[767px]:w-full max-[767px]:justify-center max-[767px]:items-center max-[767px]:text-center">
           <div className={`max-w-[24rem]`}>
             <div>
               <Image
                 priority
                 src="/images/earn.svg"
-                className={`${styles['svg']}`}
+                className=" max-[767px]:m-auto"
                 height={100}
                 width={100}
                 alt="earn"
@@ -73,7 +73,7 @@ const LandingPage = () => {
               <Image
                 priority
                 src="/images/onboard.svg"
-                className={`${styles['svg']}`}
+                className=" max-[767px]:m-auto"
                 height={100}
                 width={100}
                 alt="onboard"
@@ -90,7 +90,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className={`w-[33.33%] flex justify-center items-center ${styles['phone-icon']}`}>
+        <div className="-[33.33%] flex justify-center items-center max-[767px]:w-full max-[767px]:-order-1">
           {ismobileScreen ? <Image
             priority
             src="/images/phone.svg"
@@ -108,13 +108,13 @@ const LandingPage = () => {
         />}
         </div>
 
-        <div className={`flex flex-col gap-[4rem]  w-[33.33%] items-end ${styles['flex-contain']}`}>
+        <div className="flex flex-col gap-[4rem]  w-[33.33%] items-end max-[767px]:w-full max-[767px]:justify-center max-[767px]:items-center max-[767px]:text-center">
           <div className="max-w-[24rem]">
             <div>
               <Image
                 priority
                 src="/images/support.svg"
-                className={`${styles['svg']}`}
+                className=" max-[767px]:m-auto"
                 height={100}
                 width={100}
                 alt="support"
@@ -134,7 +134,7 @@ const LandingPage = () => {
               <Image
                 priority
                 src="/images/community.svg"
-                className={`${styles['svg']}`}
+                className="max-[767px]:m-auto"
                 height={100}
                 width={100}
                 alt="community"
@@ -151,7 +151,7 @@ const LandingPage = () => {
         </div>
         <div className={`${styles['gradient-bottom-strip']}`}></div>
       </section>
-      <section className={`mt-[10rem] ${styles['carousel-section']}`}>
+      <section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
         <h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">What Our Users Say</h1>
         <div className={`${styles['ellipse1']}`}></div>
         <div className={`${styles['ellipse2']}`}></div>
