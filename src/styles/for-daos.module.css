@@ -1,17 +1,28 @@
-@media (max-width: 767px){
-    .add-paddings{
-        padding: 30px;
-    }
-    .card-group{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    .add-padding{
-        padding: 20px;
-    }
-    .hide-text{
+.ellipse1::after{
+    content: "";
+    width: 536px;
+    height: 50%;
+    background: #5DD9C1;
+    position: absolute;
+    top: -50%;
+    filter: blur(200px);
+}
+.ellipse2::after{
+    content: "";
+    width: 536px;
+    height: 50%;
+    background: #AD43DF;
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    filter: blur(200px);
+}
+@media (max-width: 767px) {
+    .ellipse1::after{
         display: none;
+    }
+    .ellipse2::after{
+        width: 400px;
+        top: 72px;
     }
 }

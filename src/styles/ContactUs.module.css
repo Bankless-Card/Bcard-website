@@ -27,6 +27,67 @@
 @media (max-width: 767px){
     .custom-input{
         flex-direction: column;
+    }
+    .custom-col{
+        padding: 0 5%;
+    }
+    .label{
+        max-width: 100%;
+        padding: 10px 0;
+    }
+    .input{
+        width: 100%!important;
+        height: 70px;
+    }
+    .textarea{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 767px){
+    .form{
+        position: relative;
+    }
+    .ellipse3::after{
+        content: "";
+        width: 400px;
+        height: 500px;
+        background: #5DD9C1;
+        position: absolute;
+        right: -30%;
+        bottom: 20%;
+        opacity: 0.3;
+        filter: blur(200px);
+    }
+}@media (max-width: 822px){
+    .custom-input{
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .custom-col{
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        margin: auto;
+    }
+    .label{
+        max-width: 100%;
+        padding: 5px 30px;
+    }
+    .input{
+        width: 90%;
+        height: 50px;
+        margin: auto;
+    }
+    .textarea{
+        max-width: 90%;
+    }
+}
+@media (max-width: 767px){
+    .custom-input{
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

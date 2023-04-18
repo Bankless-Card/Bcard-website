@@ -15,3 +15,20 @@
         padding: 0;
     }
 }
+.footer{
+    position: relative;
+}
+.ellipse4{
+    position: relative;
+}
+.ellipse4::after{
+    content: "";
+    width: 400px;
+    height: 500px;
+    background: #AD43DF;
+    position: absolute;
+    bottom: -50%;
+    right: 50%;
+    opacity: 0.3;
+    filter: blur(200px);
+}

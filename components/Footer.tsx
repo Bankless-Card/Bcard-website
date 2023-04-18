@@ -5,7 +5,7 @@ import styles from '@/styles/Footer.module.css'
 
 const Footer = () => {
   return (
-    <section className="mt-[10rem]  pb-[3rem] mx-[7.5rem]">
+    <section className={`mt-[10rem]  pb-[3rem] mx-[7.5rem] ${styles['footer']}`}>
       <div className={` flex justify-between ${styles['content']} `}>
         <div>
           <Image
@@ -104,6 +104,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={`${styles['ellipse4']}`}></div>
     </section>
   );
 };
