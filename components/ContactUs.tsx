@@ -10,39 +10,39 @@ const ContactUs = () => {
         <h1 className="text-center font-semibold text-[2rem] leading-[2.421rem]">
           Contact Us
         </h1>
-        <form className={`flex flex-col gap-[3rem] mt-[3rem] ${styles['form']}`}>
-          <div className={`flex justify-center items-center gap-[3rem] ${styles['custom-input']}`}>
-            <div className={`flex flex-col ${styles['custom-col']}`}>
-              <label className={`${styles['label']}`}>Name</label>
+        <form className="flex flex-col gap-[3rem] mt-[3rem] relative">
+          <div className="flex justify-center items-center gap-[3rem] max-[822px]:justify-center max-[822px]:items-center max-[822px]:gap-0 max-[767px]:flex-col">
+            <div className="flex flex-col max-[822px]:self-center max-[822px]:justify-self-center max-[822px]:w-[100%] max-[822px]:m-auto">
+              <label className="max-[822px]:max-w-[100%] max-[822px]:px-[30px] max-[822px]:py-[5px] max-[767px]:py-[10px]">Name</label>
               <input
                 type=""
-                className={`border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit ${styles['input']}`}
+                className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit max-[822px]:w-[90%] max-[822px]:h-[50px] max-[822px]:m-auto"
               />
             </div>
-            <div className={`flex flex-col ${styles['custom-col']}`}>
-              <label className={`${styles['label']}`}>Discord Handle</label>
+            <div className="flex flex-col max-[822px]:self-center max-[822px]:justify-self-center max-[822px]:w-[100%] max-[822px]:m-auto">
+              <label className="max-[822px]:max-w-[100%] max-[822px]:px-[30px] max-[822px]:py-[5px] max-[767px]:py-[10px]">Discord Handle</label>
               <input
                 type=""
-                className={`border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit ${styles['input']}`}
+                className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit max-[822px]:w-[90%] max-[822px]:h-[50px] max-[822px]:m-auto"
               />
             </div>
           </div>
 
-          <div className={`flex justify-center items-center gap-[3rem] ${styles['custom-input']}`}>
-            <div className={`flex flex-col ${styles['custom-col']}`}>
-              <label className={`${styles['label']}`}>
+          <div className="flex justify-center items-center gap-[3rem] max-[822px]:justify-center max-[822px]:items-center max-[822px]:gap-0 max-[767px]:flex-col">
+            <div className="flex flex-col max-[822px]:self-center max-[822px]:justify-self-center max-[822px]:w-[100%] max-[822px]:m-auto">
+              <label className="max-[822px]:max-w-[100%] max-[822px]:px-[30px] max-[822px]:py-[5px] max-[767px]:py-[10px]">
                 Email Address <span className="text-[#CA0814]">*</span>
               </label>
               <input
                 type=""
-                className={`border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit ${styles['input']}`}
+                className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit max-[822px]:w-[90%] max-[822px]:h-[50px] max-[822px]:m-auto"
               />
             </div>
-            <div className={`flex flex-col ${styles['custom-col']}`}>
-              <label className={`${styles['label']}`}>Organization </label>
+            <div className="flex flex-col max-[822px]:self-center max-[822px]:justify-self-center max-[822px]:w-[100%] max-[822px]:m-auto">
+              <label className="max-[822px]:max-w-[100%] max-[822px]:px-[30px] max-[822px]:py-[5px] max-[767px]:py-[10px]">Organization </label>
               <input
                 type=""
-                className={`border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit ${styles['input']}`}
+                className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[22.625rem]  bg-inherit max-[822px]:w-[90%] max-[822px]:h-[50px] max-[822px]:m-auto"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ const ContactUs = () => {
           <div>
             <div className="flex flex-col items-center">
               <label>Write a message</label>
-              <textarea className={`border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[49.5rem] h-[9rem] bg-inherit ${styles['textarea']}`}></textarea>
+              <textarea className="border border-white px-[0.5rem] py-2 rounded-[0.313rem] w-[49.5rem] h-[9rem] bg-inherit  max-[822px]:max-w-[90%] "></textarea>
             </div>
           </div>
           <div className="flex justify-center">
