@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import styles from '@/styles/for-investors.module.css'
+import styles from '@/styles/for-investors.module.css'
 import Navbar from "components/Navbar";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
@@ -10,7 +10,9 @@ const ForInvestors = () => {
   return (
     <div>
       <Navbar />
-      <section>
+      <section className="relative">
+        <div className={`${styles['ellipse5']}`}></div>
+        <div className={`${styles['ellipse2']}`}></div>
         <h1 className="text-[2.25rem] leading-[2.723rem] font-semibold text-center px-[40px]">
           Powering the financial future of DAOs.
         </h1>
@@ -18,12 +20,12 @@ const ForInvestors = () => {
           DAOs are the present and future of Web3 communities, and Bankless Card
           gives their members a way to support them with every swipe.
         </p>
-        <div className="flex justify-center gap-[2rem] mt-[3rem] max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center">
-        <a href="https://docs.google.com/presentation/d/1lmrNxJL-XmqbMYAKw6GIoYljE6bEHpBMuPXDRqUJ8p0/edit#slide=id.g20c4eb3302c_0_15" target="_blank" rel="noreferrer">
-            <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] border border-gradient-to-r from-purple-600 to-indigo-600  px-[0.5rem]">
-                 our pitch deck
-                </button>
-        </a>
+        <div className="flex justify-center gap-[2rem] mt-[3rem] relative max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center">
+            <a href="https://docs.google.com/presentation/d/1lmrNxJL-XmqbMYAKw6GIoYljE6bEHpBMuPXDRqUJ8p0/edit#slide=id.g20c4eb3302c_0_15" target="_blank" rel="noreferrer">
+                <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] border border-gradient-to-r from-purple-600 to-indigo-600  px-[0.5rem]">
+                    our pitch deck
+                    </button>
+            </a>
 
             <a href="https://www.youtube.com/watch?v=_5sthQO5rp4" target="_blank" rel="noreferrer">
                 <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.5rem]">
