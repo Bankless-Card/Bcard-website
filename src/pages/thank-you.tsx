@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div  className="flex justify-center items-center flex-col gap-[2rem] p-[4rem]">
+      <div  className="flex justify-center items-center flex-col gap-[2rem] p-[4rem] relative">
         <div className={`${styles['ellipse1']}`}></div>
         <div className="text-[20px] font-bold text-center">
             Thank you for joining our waiting list! We have sent you a confirmation email.
