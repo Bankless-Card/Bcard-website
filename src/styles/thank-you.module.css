@@ -1,0 +1,10 @@
+.ellipse1{
+    width: 536px;
+    height: 536px;
+    background: #AD43DF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.4;
+    filter: blur(200px);
+}
