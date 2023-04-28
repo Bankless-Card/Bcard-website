@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '@/styles/Footer.module.css'
 
-import footerLog from "../public/images/footer-log.svg";
+import footerLog from "../public/images/footerLog.svg";
 import twitter from "../public/images/twitter.svg";
 import discord from "../public/images/discord.svg";
 import github from "../public/images/github.svg";
-// import playStore from "../public/images/play-store.svg";
-// import appStore from "../public/images/app-store.svg";
+// import playStore from "../public/images/playStore.svg";
+// import appStore from "../public/images/appStore.svg";
 
 const Footer = () => {
   return (
