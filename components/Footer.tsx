@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '@/styles/Footer.module.css'
 
-import footerLog from "@/public/images/footer-log.svg";
+import footerLog from "../public/images/footer-log.svg";
 
 const Footer = () => {
   return (
