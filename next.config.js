@@ -11,6 +11,7 @@ const nextConfig = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
+  basePath: 'Bcard-website',
   output: 'standalone',
 }
 
