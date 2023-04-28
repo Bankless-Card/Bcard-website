@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '@/styles/Footer.module.css'
 
+import footerLog from "@/public/images/footer-log.svg";
+
 const Footer = () => {
   return (
     <section className={`mt-[10rem]  pb-[3rem] mx-[7.5rem] ${styles['footer']}`}>
@@ -10,7 +12,7 @@ const Footer = () => {
         <div>
           <Image
             priority
-            src="/images/footer-log.svg"
+            src={footerLog}
             className=""
             height={94}
             width={82.9}
