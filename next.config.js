@@ -13,7 +13,7 @@ const nextConfig = {
   // },
   basePath: '/Bcard-website',
   assetPrefix: '/Bcard-website/',
-  output: 'standalone',
+  output: 'export',
 }
 
 module.exports = nextConfig
