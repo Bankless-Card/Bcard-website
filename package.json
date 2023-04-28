@@ -1,6 +1,7 @@
 {
   "name": "bcard-website",
   "version": "0.1.0",
+  "homepage": "https://bankless-card.github.io/Bcard-website",
   "private": true,
   "scripts": {
     "dev": "next dev",
