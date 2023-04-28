@@ -4,6 +4,11 @@ import Link from "next/link";
 import styles from '@/styles/Footer.module.css'
 
 import footerLog from "../public/images/footer-log.svg";
+import twitter from "../public/images/twitter.svg";
+import discord from "../public/images/discord.svg";
+import github from "../public/images/github.svg";
+// import playStore from "../public/images/play-store.svg";
+// import appStore from "../public/images/app-store.svg";
 
 const Footer = () => {
   return (
@@ -38,7 +43,7 @@ const Footer = () => {
           <div>
             <Image
               priority
-              src="/images/app-store.svg"
+              src={appStore}
               className=""
               height={55.68}
               width={177}
@@ -48,7 +53,7 @@ const Footer = () => {
           <div>
             <Image
               priority
-              src="/images/play-store.svg"
+              src={playStore}
               className=""
               height={55.68}
               width={177}
@@ -69,7 +74,7 @@ const Footer = () => {
           <a  href="https://twitter.com/BanklessCard" target="_blank" rel="noreferrer">
             <Image
               priority
-              src="/images/twitter.svg"
+              src={twitter}
               className=""
               height={24}
               width={24}
@@ -82,7 +87,7 @@ const Footer = () => {
           <a href="https://discord.gg/bankless" target="_blank" rel="noreferrer">
             <Image
               priority
-              src="/images/discord.svg"
+              src={discord}
               className=""
               height={24}
               width={24}
@@ -95,7 +100,7 @@ const Footer = () => {
           <a href="https://github.com/Bankless-Card" target="_blank" rel="noreferrer" >
             <Image
               priority
-              src="/images/github.svg"
+              src={github}
               className=""
               height={24}
               width={24}
