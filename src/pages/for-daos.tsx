@@ -6,9 +6,9 @@ import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
 import styles from "@/styles/for-daos.module.css"
 
-import daoContributor from "../public/images/dao-contributor.svg";
-import daoLeader from "../public/images/dao-leader.svg";
-import newWeb3 from "../public/images/new-web3.svg";
+import daoContributor from "../../public/images/daoContributor.svg";
+import daoLeader from "../../public/images/daoLeader.svg";
+import newWeb3 from "../../public/images/newWeb3.svg";
 
 
 const ForDaos = () => {

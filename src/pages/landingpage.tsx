@@ -7,12 +7,12 @@ import TestimonialCarousel from "components/TestimonialCarousel";
 import styles from "@/styles/landingpage.module.css"
 import { useMediaQuery } from '@chakra-ui/react';
 
-import bcard from "../public/images/bcard.svg";
-import earn from "../public/images/earn.svg";
-import onboard from "../public/images/onboard.svg";
-import phone from "../public/images/phone.svg";
-import support from "../public/images/support.svg";
-import community from "../public/images/community.svg";
+import bcard from "../../public/images/bcard.svg";
+import earn from "../../public/images/earn.svg";
+import onboard from "../../public/images/onboard.svg";
+import phone from "../../public/images/phone.svg";
+import support from "../../public/images/support.svg";
+import community from "../../public/images/community.svg";
 
 const LandingPage = () => {
   const [ismobileScreen] = useMediaQuery("(max-width: 768px)");

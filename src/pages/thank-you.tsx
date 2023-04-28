@@ -5,7 +5,7 @@ import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import styles from "@/styles/thank-you.module.css"
 
-import envelope from "../public/images/envelope.svg";
+import envelope from "../../public/images/envelope.png";
 
 const Contact = () => {
   return (
