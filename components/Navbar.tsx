@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from '@/styles/Navbar.module.css'
 
+import logo from "../public/images/logo.svg";
+import hamburger from "../public/images/hamburger.svg";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -21,7 +24,7 @@ const Navbar = () => {
       <Link href="/" className="">
         <Image
           priority
-          src="/images/logo.svg"
+          src={logo}
           className=""
           height={56.97}
           width={179}
@@ -48,7 +51,7 @@ const Navbar = () => {
         >
           <Image
             priority
-            src="/images/hamburger.svg"
+            src={hamburger}
             className=""
             height={25}
             width={25}
