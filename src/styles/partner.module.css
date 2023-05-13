@@ -1,0 +1,9 @@
+.ellipse::after{
+    width: 536px;
+    height: 536px;
+    position: absolute;
+    left: 0;
+    background: #AD43DF;
+    opacity: 0.3;
+    filter: blur(200px);
+}
