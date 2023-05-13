@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Product from "components/Product";
 import Partner from "components/Partner";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
@@ -169,6 +170,7 @@ const LandingPage = () => {
 				<div className={`${styles["ellipse2"]}`}></div>
 				<TestimonialCarousel />
 			</section>
+			<Product />
 			<Partner />
 			<ContactUs />
 			<Footer />
