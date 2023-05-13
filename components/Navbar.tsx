@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center p-[3rem]">
-      <Link href="/" className="">
+      <Link href="/" className="z-50">
         <Image
           priority
           src={logo}
