@@ -84,8 +84,7 @@ const ForDaos = () => {
 							DAO Leader
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
-							A better way to retain and care for your contributors by
-							positioning your token in a practical way.
+						Fund your DAO by giving your fans a way to support you without changing behaviour.
 						</p>
 					</div>
 					<div>
@@ -103,8 +102,7 @@ const ForDaos = () => {
 							New in Web 3.0?
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
-							We teach you about the world of web 3.0 with a simple and
-							educational application.
+						Learn key web3 concepts via a simple and educational mobile app.
 						</p>
 					</div>
 				</div>
