@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Partner from "components/Partner";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
 import TestimonialCarousel from "components/TestimonialCarousel";
@@ -44,8 +45,6 @@ const LandingPage = () => {
 						priority
 						src={bcard}
 						className=""
-						height={'100%'}
-						width={'100%'}
 						alt="bankless card"
 					/>
 				</div>
@@ -170,6 +169,7 @@ const LandingPage = () => {
 				<div className={`${styles["ellipse2"]}`}></div>
 				<TestimonialCarousel />
 			</section>
+			<Partner />
 			<ContactUs />
 			<Footer />
 		</div>
