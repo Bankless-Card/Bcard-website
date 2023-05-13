@@ -11,11 +11,11 @@ import styles from "@/styles/partner.module.css"
 const Partner = () => {
   return (
     <>
-      <section className={`${styles['ellipse']} mt-[2rem] bg-[#171717] py-[3rem] relative`}>
+      <section className={`${styles['ellipse']} flex flex-col gap-[4rem] mt-[2rem] min-[767px]:bg-[#171717] py-[3rem] relative`}>
         <h1 className="text-center font-semibold text-[2rem] leading-[2.421rem] relative">
           Our Partners
         </h1>
-        <div className='flex justify-center items-center gap-[9%] p-[3%]'>
+        <div className='flex max-[767px]:flex-col justify-center items-center min-[767px]:gap-[9%] max-[767px]:gap-[4rem] p-[3%]'>
             <div>
                 <Image
                     priority
