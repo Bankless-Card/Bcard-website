@@ -9,7 +9,7 @@ import vault from "../public/images/product/vault.svg";
 const Product = () => {
   return (
     <>
-      <section className="grid grid-cols-3 items-center gap-[2.5rem] mt-[2rem] px-[4rem] py-[3rem] relative">
+      <section className="grid grid-cols-3 max-[767px]:grid-cols-1 items-center gap-[2.5rem] mt-[2rem] px-[4rem] py-[3rem] relative">
         <div className="bg-[#313131] rounded-[20px] backdrop-blur-[2px]">
             <div className="w-[100%] box-border">
                 <Image
