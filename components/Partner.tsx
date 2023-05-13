@@ -16,7 +16,7 @@ const Partner = () => {
           Our Partners
         </h1>
         <div className='flex max-[767px]:flex-col justify-center items-center min-[767px]:gap-[9%] max-[767px]:gap-[4rem] p-[3%]'>
-            <div>
+            <div className="relative">
                 <Image
                     priority
                     src={opolis}
@@ -24,7 +24,7 @@ const Partner = () => {
                     alt="bankless card"
                 />
             </div>
-            <div>
+            <div className="relative z-50">
                 <Image
                     priority
                     src={ityroot}
@@ -32,7 +32,7 @@ const Partner = () => {
                     alt="bankless card"
                 />
             </div>
-            <div>
+            <div className="relative z-50">
                 <Image
                     priority
                     src={hdao}
@@ -40,7 +40,7 @@ const Partner = () => {
                     alt="bankless card"
                 />
             </div>
-            <div>
+            <div className="relative z-50">
                 <Image
                     priority
                     src={daoPunk}
@@ -48,7 +48,7 @@ const Partner = () => {
                     alt="bankless card"
                 />
             </div>
-            <div>
+            <div className="relative z-50">
                 <Image
                     priority
                     src={dao}
