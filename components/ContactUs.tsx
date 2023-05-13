@@ -10,7 +10,7 @@ const ContactUs = () => {
         <h1 className="text-center font-semibold text-[2rem] leading-[2.421rem] relative">
           Contact Us
         </h1>
-        <form className="flex flex-col gap-[3rem] mt-[3rem] relative">
+        <form action='/thank-you' className="flex flex-col gap-[3rem] mt-[3rem] relative">
           <div className="flex justify-center items-center gap-[3rem] max-[822px]:justify-center max-[822px]:items-center max-[822px]:gap-0 max-[767px]:flex-col">
             <div className="flex flex-col max-[822px]:self-center max-[822px]:justify-self-center max-[822px]:w-[100%] max-[822px]:m-auto">
               <label className="max-[822px]:max-w-[100%] max-[822px]:px-[30px] max-[822px]:py-[5px] max-[767px]:py-[10px] relative">Name</label>

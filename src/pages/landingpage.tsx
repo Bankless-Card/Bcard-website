@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Product from "components/Product";
 import Partner from "components/Partner";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
@@ -20,7 +21,7 @@ const LandingPage = () => {
 
   return (
 		<div>
-			<section className="flex flex-col md:flex-row justify-between items-center px-[3rem]">
+			<section className="flex flex-col md:flex-row justify-center gap-[2rem] items-center px-[3rem]">
 				<div className="w-[50%] max-[767px]:w-full">
 					<div className={`${styles["gradient-header"]}`}></div>
 					<h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
@@ -169,6 +170,7 @@ const LandingPage = () => {
 				<div className={`${styles["ellipse2"]}`}></div>
 				<TestimonialCarousel />
 			</section>
+			<Product />
 			<Partner />
 			<ContactUs />
 			<Footer />
