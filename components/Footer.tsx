@@ -13,7 +13,7 @@ import github from "../public/images/github.svg";
 const Footer = () => {
   return (
     <section className={`mt-[10rem]  pb-[3rem] mx-[7.5rem] ${styles['footer']}`}>
-      <div className={` flex justify-between ${styles['content']} `}>
+      <div className={` flex justify-between ${styles['content']}`}>
         <div>
           <Image
             priority
@@ -24,13 +24,13 @@ const Footer = () => {
             alt="bankless card"
           />
         </div>
-        <div className="flex flex-col gap-[1rem]">
+        <div className="flex flex-col gap-[1rem] z-[100]">
           <h1 className="font-semibold text-lg leading-[1.375rem]">Bankless Card</h1>
           <Link href="/">Home</Link>
           <Link href="/for-daos">For DAOs</Link>
           <Link href="/for-investors">For Investors</Link>
         </div>
-        <div className="flex flex-col gap-[1rem] ">
+        <div className="flex flex-col gap-[1rem] z-[100]">
           <h1 className="font-semibold text-lg leading-[1.375rem]">Information</h1>
           {/* <div className="">FAQ</div> */}
           <a href="https://banklesscard.mirror.xyz/" target="_blank" rel="noreferrer">Blog</a>
@@ -67,10 +67,10 @@ const Footer = () => {
         <div className="pb-[3rem]">
           <hr className="border-[#313131]" />
         </div>
-        <div className={`flex justify-between items-center ${styles['content-down']}`}>
+        <div className={`flex justify-between items-center z-[100] ${styles['content-down']}`}>
           <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
           <div className="flex items-center gap-3  ">
-          <div>
+          <div className=" z-[100]">
           <a  href="https://twitter.com/BanklessCard" target="_blank" rel="noreferrer">
             <Image
               priority

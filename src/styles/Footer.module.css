@@ -18,17 +18,16 @@
 .footer{
     position: relative;
 }
-.ellipse4{
-    position: relative;
-}
-.ellipse4::after{
+.footer::after{
     content: "";
     width: 400px;
     height: 500px;
     background: #AD43DF;
     position: absolute;
-    bottom: -50%;
+    bottom: 0;
     right: 50%;
+    transform: translateX(50%);
     opacity: 0.3;
+    z-index: 2;
     filter: blur(200px);
 }
