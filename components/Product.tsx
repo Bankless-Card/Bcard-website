@@ -25,7 +25,7 @@ const Product = () => {
                     <p className="text-[1rem]">Web3 is not designed for everyday users. We are here to change that, by building an Internet that is truly equitable for all.</p>
                 </div>
                 <Link href="https://banklesscard.mirror.xyz/eh3a3yf0tm2gD3UTjTFb351xB6AdAct526dsGuVmigY" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
-                    <span className="text-[1rem]">view</span>
+                    <span className="text-[1rem]">View</span>
                     <Image
                         priority
                         src={linkIcon}
@@ -50,7 +50,7 @@ const Product = () => {
                     <p className="text-[1rem]">Fast, free and built for DAO Contributors, Taxman is a quick and easy tool to help you calculate your DAO income taxes.</p>
                 </div>
                 <Link href="https://taxman.justplay.cafe/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
-                    <span className="text-[1rem]">view</span>
+                    <span className="text-[1rem]">View</span>
                     <Image
                         priority
                         src={linkIcon}
@@ -75,7 +75,7 @@ const Product = () => {
                     <p className="text-[1rem]">The Bankless Card Vault allows DAOs, big and small, to safely share passwords no matter the number of contributors.</p>
                 </div>
                 <Link href=" https://vault.banklesscard.xyz/#/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
-                    <span className="text-[1rem]">view</span>
+                    <span className="text-[1rem]">View</span>
                     <Image
                         priority
                         src={linkIcon}

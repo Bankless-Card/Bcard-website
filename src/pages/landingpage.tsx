@@ -120,7 +120,7 @@ const LandingPage = () => {
 				</div>
 
 				<div className="flex flex-col gap-[4rem]  w-[33.33%] items-end max-[767px]:w-full max-[767px]:justify-center max-[767px]:items-center max-[767px]:text-center">
-					<div className="max-w-[24rem]">
+					<div className="max-w-[24rem] min-[767px]:flex flex-col items-end">
 						<div>
 							<Image
 								priority
@@ -131,16 +131,16 @@ const LandingPage = () => {
 								alt="support"
 							/>
 						</div>
-						<h2 className="font-semibold text-[2rem] leading-[2.421rem]">
+						<h2 className="font-semibold text-[2rem] leading-[2.421rem] min-[767px]:text-end">
 							Support your favourite DAOs
 						</h2>
-						<p className="text-lg leading-[1.375rem]">
+						<p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
 							A percentage from every card payment goes to your DAO’s treasury,
 							helping to fund their mission.
 						</p>
 					</div>
 
-					<div className="max-w-[24rem]">
+					<div className="max-w-[24rem] min-[767px]:flex flex-col items-end">
 						<div>
 							<Image
 								priority
@@ -151,10 +151,10 @@ const LandingPage = () => {
 								alt="community"
 							/>
 						</div>
-						<h2 className="font-semibold text-[2rem] leading-[2.421rem]">
+						<h2 className="font-semibold text-[2rem] leading-[2.421rem] min-[767px]:text-end">
 							The community-owned card!
 						</h2>
-						<p className="text-lg leading-[1.375rem]">
+						<p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
 							Bankless Card is by DAOs, for DAOs. Unlike centralized crypto
 							cards, you have a say in how we build the future.
 						</p>
