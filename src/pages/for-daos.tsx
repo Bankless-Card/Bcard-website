@@ -62,11 +62,10 @@ const ForDaos = () => {
 							/>
 						</div>
 						<h1 className="font-medium text-lg leading-7 text-center max-[767px]:p-[20px]">
-							DAO Contributor
+							DAO Contributors
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
-							An easier way to obtain DAO tokens and get rewarded for your
-							spending.
+							An easier way to support your DAO through your everyday spending
 						</p>
 					</div>
 					<div>
@@ -81,7 +80,7 @@ const ForDaos = () => {
 							/>
 						</div>
 						<h1 className="font-medium text-lg leading-7 text-center max-[767px]:p-[20px]">
-							DAO Leader
+							DAO Leaders
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
 						Fund your DAO by giving your fans a way to support you without changing behaviour.

@@ -162,14 +162,14 @@ const LandingPage = () => {
 				</div>
 				<div className={`${styles["gradient-bottom-strip"]}`}></div>
 			</section>
-			<section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
+			{/* <section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
 				<h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">
 					What Our Users Say
 				</h1>
 				<div className={`${styles["ellipse1"]}`}></div>
 				<div className={`${styles["ellipse2"]}`}></div>
 				<TestimonialCarousel />
-			</section>
+			</section> */}
 			<Product />
 			<Partner />
 			<ContactUs />
