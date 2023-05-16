@@ -22,13 +22,13 @@ const ForInvestors = () => {
         </p>
         <div className="flex justify-center gap-[2rem] mt-[3rem] relative max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center">
             <a href="https://docs.google.com/presentation/d/1lmrNxJL-XmqbMYAKw6GIoYljE6bEHpBMuPXDRqUJ8p0/edit#slide=id.g20c4eb3302c_0_15" target="_blank" rel="noreferrer">
-                <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] border border-gradient-to-r from-purple-600 to-indigo-600  px-[0.5rem]">
+                <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] border border-gradient-to-r from-purple-600 to-indigo-600  px-[0.5rem] capitalize">
                     our pitch deck
                     </button>
             </a>
 
             <a href="https://www.youtube.com/watch?v=_5sthQO5rp4" target="_blank" rel="noreferrer">
-                <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.5rem]">
+                <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.5rem] capitalize">
                   watch our video
                 </button>
             </a>
