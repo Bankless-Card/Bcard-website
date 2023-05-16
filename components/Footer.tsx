@@ -18,7 +18,7 @@ const Footer = () => {
           <Image
             priority
             src={footerLog}
-            className=""
+            className="z-[100]"
             height={94}
             width={82.9}
             alt="bankless card"
