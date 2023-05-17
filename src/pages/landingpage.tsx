@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Product from "components/Product";
+import Partner from "components/Partner";
 import ContactUs from "components/ContactUs";
 import Footer from "components/Footer";
 import TestimonialCarousel from "components/TestimonialCarousel";
@@ -19,7 +21,7 @@ const LandingPage = () => {
 
   return (
 		<div>
-			<section className="flex flex-col md:flex-row justify-between items-center mt-[7rem] px-[3rem]">
+			<section className="flex flex-col md:flex-row justify-center gap-[2rem] items-center px-[3rem]">
 				<div className="w-[50%] max-[767px]:w-full">
 					<div className={`${styles["gradient-header"]}`}></div>
 					<h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
@@ -44,8 +46,6 @@ const LandingPage = () => {
 						priority
 						src={bcard}
 						className=""
-						height={343}
-						width={384}
 						alt="bankless card"
 					/>
 				</div>
@@ -120,7 +120,7 @@ const LandingPage = () => {
 				</div>
 
 				<div className="flex flex-col gap-[4rem]  w-[33.33%] items-end max-[767px]:w-full max-[767px]:justify-center max-[767px]:items-center max-[767px]:text-center">
-					<div className="max-w-[24rem]">
+					<div className="max-w-[24rem] min-[767px]:flex flex-col items-end">
 						<div>
 							<Image
 								priority
@@ -131,16 +131,16 @@ const LandingPage = () => {
 								alt="support"
 							/>
 						</div>
-						<h2 className="font-semibold text-[2rem] leading-[2.421rem]">
+						<h2 className="font-semibold text-[2rem] leading-[2.421rem] min-[767px]:text-end">
 							Support your favourite DAOs
 						</h2>
-						<p className="text-lg leading-[1.375rem]">
+						<p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
 							A percentage from every card payment goes to your DAO’s treasury,
 							helping to fund their mission.
 						</p>
 					</div>
 
-					<div className="max-w-[24rem]">
+					<div className="max-w-[24rem] min-[767px]:flex flex-col items-end">
 						<div>
 							<Image
 								priority
@@ -151,10 +151,10 @@ const LandingPage = () => {
 								alt="community"
 							/>
 						</div>
-						<h2 className="font-semibold text-[2rem] leading-[2.421rem]">
+						<h2 className="font-semibold text-[2rem] leading-[2.421rem] min-[767px]:text-end">
 							The community-owned card!
 						</h2>
-						<p className="text-lg leading-[1.375rem]">
+						<p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
 							Bankless Card is by DAOs, for DAOs. Unlike centralized crypto
 							cards, you have a say in how we build the future.
 						</p>
@@ -162,14 +162,16 @@ const LandingPage = () => {
 				</div>
 				<div className={`${styles["gradient-bottom-strip"]}`}></div>
 			</section>
-			<section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
+			{/* <section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
 				<h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">
 					What Our Users Say
 				</h1>
 				<div className={`${styles["ellipse1"]}`}></div>
 				<div className={`${styles["ellipse2"]}`}></div>
 				<TestimonialCarousel />
-			</section>
+			</section> */}
+			<Product />
+			<Partner />
 			<ContactUs />
 			<Footer />
 		</div>
