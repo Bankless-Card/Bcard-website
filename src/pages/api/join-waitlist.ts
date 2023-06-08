@@ -1,5 +1,4 @@
 import { IsEmail } from 'class-validator';
-import { Waitlist } from '@/database/models';
 import {
   Body,
   InternalServerErrorException,
@@ -7,7 +6,7 @@ import {
   ValidationPipe,
   createHandler,
 } from 'next-api-decorators';
-import dbConnect from '@/database/connect';
+import API from '@/utils';
 
 class JoinWaitlistDto {
   @IsEmail()
@@ -18,11 +17,10 @@ class JoinWaitlistHandler {
   @Post()
   async joinWaitlist(@Body(ValidationPipe) dto: JoinWaitlistDto) {
     try {
-      await dbConnect();
-      const email = await Waitlist.findOne({ email: dto.email });
-      if (!email) {
-        await Waitlist.create({ email: dto.email });
-      }
+      await API.post(
+        `${process.env.CONVERTKIT_API_BASE_URL}/forms/${process.env.CONVERTKIT_WAITLIST_FORM_ID}/subscribe`,
+        { api_key: process.env.CONVERTKIT_API_KEY, email: dto.email }
+      );
       return null;
     } catch (err) {
       console.error('JoinWaitlistHandler-POST', err);

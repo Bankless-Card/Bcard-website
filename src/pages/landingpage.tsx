@@ -8,6 +8,8 @@ import Footer from 'components/Footer';
 import TestimonialCarousel from 'components/TestimonialCarousel';
 import styles from '@/styles/landingpage.module.css';
 import { useMediaQuery } from '@chakra-ui/react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import bcard from '../../public/images/bcard.svg';
 import earn from '../../public/images/earn.svg';
@@ -33,6 +35,7 @@ const LandingPage = () => {
       router.push('/thank-you');
     } catch (err) {
       console.error('Something went wrong', err);
+      toast('Something went wrong');
     }
   };
 
@@ -47,6 +50,7 @@ const LandingPage = () => {
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 max-[767px]:leading-[130%]">
             Pay in fiat, earn DAO tokens. Support your DAO with every swipe.
           </p>
+          {/* <ConvertKitForm formId={MY_FORM_ID} /> */}
           <form
             className="flex gap-4  mt-[2rem] justify-center max-[767px]:flex-col max-[767px]:items-center max-[767px]:pb-[20px] max-[767px]:justify-center"
             onSubmit={handleSubmitWaitlist}
@@ -195,6 +199,7 @@ const LandingPage = () => {
       <Partner />
       <ContactUs />
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

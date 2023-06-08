@@ -3,8 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/ContactUs.module.css';
 import API from '@/utils';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const ContactUs = () => {
   const [contactUsInfo, setContactUsInfo] = useState({
@@ -29,7 +28,10 @@ const ContactUs = () => {
   ) => {
     ev.preventDefault();
     try {
-      await API.post('/contact-us', contactUsInfo);
+      await API.post(
+        `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_MAIL_ID}`,
+        contactUsInfo
+      );
 
       setContactUsInfo({
         discordHandle: '',
@@ -41,6 +43,7 @@ const ContactUs = () => {
       toast('Message submitted');
     } catch (err) {
       console.error('Something went wrong', err);
+      toast('Something went wrong');
     }
   };
 
@@ -132,7 +135,6 @@ const ContactUs = () => {
           <div className={`${styles['ellipse3']}`}></div>
         </form>
       </section>
-      <ToastContainer />
     </>
   );
 };

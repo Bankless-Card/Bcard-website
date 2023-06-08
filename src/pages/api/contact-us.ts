@@ -7,7 +7,6 @@ import {
   ValidationPipe,
   createHandler,
 } from 'next-api-decorators';
-import dbConnect from '@/database/connect';
 
 class ContactUsDto {
   @IsOptional()
@@ -30,7 +29,6 @@ class ContactUsHandler {
   @Post()
   async contactUs(@Body(ValidationPipe) dto: ContactUsDto) {
     try {
-      await dbConnect();
       await ContactUs.create(dto);
       return null;
     } catch (err) {
