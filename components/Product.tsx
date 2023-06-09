@@ -74,7 +74,7 @@ const Product = () => {
                     <h3 className="text-[1.4rem] font-semibold">Bankless Card Vault: The Password Manager for DAOs</h3>
                     <p className="text-[1rem]">The Bankless Card Vault allows DAOs, big and small, to safely share passwords no matter the number of contributors.</p>
                 </div>
-                <Link href=" https://vault.banklesscard.xyz" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
+                <Link href="https://vault.banklesscard.xyz/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
                     <span className="text-[1rem]">View</span>
                     <Image
                         priority
