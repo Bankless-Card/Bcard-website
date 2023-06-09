@@ -11,12 +11,12 @@ import { useMediaQuery } from '@chakra-ui/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import bcard from '../../public/images/bcard.svg';
+import bcard from '../../public/images/bcard.png';
 import earn from '../../public/images/earn.svg';
 import onboard from '../../public/images/onboard.svg';
 import phone from '../../public/images/phone.svg';
 import support from '../../public/images/support.svg';
-import community from '../../public/images/community.svg';
+import community from '../../public/images/community.png';
 import API from '@/utils';
 import { useRouter } from 'next/router';
 
@@ -72,7 +72,7 @@ const LandingPage = () => {
           </form>
         </div>
         <div className="max-[767px]:hidden">
-          <Image priority src={bcard} className="" alt="bankless card" />
+          <Image priority src={bcard} className="w-[] h-[]" alt="bankless card" />
         </div>
         <div className={`${styles['gradient-header-strip']}`}></div>
       </section>

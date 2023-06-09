@@ -27,7 +27,7 @@ const ForInvestors = () => {
                     </button>
             </a>
 
-            <a href="https://www.youtube.com/watch?v=_5sthQO5rp4" target="_blank" rel="noreferrer">
+            <a href="https://www.youtube.com/watch?v=GVhzI1GyGSI" target="_blank" rel="noreferrer">
                 <button className="w-[11.707rem] h-[3rem] rounded-[0.25rem] bg-gradient-to-r from-purple-600 to-indigo-600 px-[0.5rem] capitalize">
                   WATCH OUR VIDEO
                 </button>

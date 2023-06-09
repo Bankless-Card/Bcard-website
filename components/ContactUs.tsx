@@ -42,7 +42,7 @@ const ContactUs = () => {
       });
       toast('Message submitted');
     } catch (err) {
-      console.error('Something went wrong', err);
+      console.error('Something went wrong', err); 
       toast('Something went wrong');
     }
   };
