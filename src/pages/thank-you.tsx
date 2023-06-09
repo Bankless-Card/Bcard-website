@@ -25,7 +25,7 @@ const Contact = () => {
 					height={300}
 					width={300}
 				/>
-				<div className="leading-[2rem] text-center px-[1rem]  md:px-[3.5rem] py-[1rem]">
+				<div className="leading-[2rem] text-lg text-center px-[1rem]  md:px-[3.5rem] py-[1rem]">
 					Keep an eye on your inbox for regular updates on our product!
 					Meanwhile, follow Bankless on our social media to learn about other
 					exciting stuff our vibrant community has in store!
