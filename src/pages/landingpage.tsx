@@ -1,41 +1,41 @@
-import React, { FormEvent, FormEventHandler, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import Product from 'components/Product';
-import Partner from 'components/Partner';
-import ContactUs from 'components/ContactUs';
-import Footer from 'components/Footer';
-import TestimonialCarousel from 'components/TestimonialCarousel';
-import styles from '@/styles/landingpage.module.css';
-import { useMediaQuery } from '@chakra-ui/react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { FormEvent, FormEventHandler, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Product from "components/Product";
+import Partner from "components/Partner";
+import ContactUs from "components/ContactUs";
+import Footer from "components/Footer";
+import TestimonialCarousel from "components/TestimonialCarousel";
+import styles from "@/styles/landingpage.module.css";
+import { useMediaQuery } from "@chakra-ui/react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import bcard from '../../public/images/bcard.png';
-import earn from '../../public/images/earn.svg';
-import onboard from '../../public/images/onboard.svg';
-import phone from '../../public/images/phone.svg';
-import support from '../../public/images/support.svg';
-import community from '../../public/images/community.png';
-import API from '@/utils';
-import { useRouter } from 'next/router';
+import bcard from "../../public/images/bcard.png";
+import earn from "../../public/images/earn.svg";
+import onboard from "../../public/images/onboard.svg";
+import phone from "../../public/images/phone.svg";
+import support from "../../public/images/support.svg";
+import community from "../../public/images/image.png";
+import API from "@/utils";
+import { useRouter } from "next/router";
 
 const LandingPage = () => {
   const router = useRouter();
-  const [ismobileScreen] = useMediaQuery('(max-width: 768px)');
-  const [waitlistEmail, setWaitlistEmail] = useState('');
+  const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
+  const [waitlistEmail, setWaitlistEmail] = useState("");
 
   const handleSubmitWaitlist: FormEventHandler<HTMLFormElement> = async (
     ev
   ) => {
     ev.preventDefault();
     try {
-      await API.post('/join-waitlist', { email: waitlistEmail });
-      setWaitlistEmail('');
-      router.push('/thank-you');
+      await API.post("/join-waitlist", { email: waitlistEmail });
+      setWaitlistEmail("");
+      router.push("/thank-you");
     } catch (err) {
-      console.error('Something went wrong', err);
-      toast('Something went wrong');
+      console.error("Something went wrong", err);
+      toast("Something went wrong");
     }
   };
 
@@ -43,7 +43,7 @@ const LandingPage = () => {
     <div>
       <section className="flex flex-col md:flex-row justify-center gap-[2rem] items-center px-[3rem]">
         <div className="w-[50%] max-[767px]:w-full">
-          <div className={`${styles['gradient-header']}`}></div>
+          <div className={`${styles["gradient-header"]}`}></div>
           <h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
             The card made for DAOs, by BanklessDAO.
           </h1>
@@ -72,9 +72,14 @@ const LandingPage = () => {
           </form>
         </div>
         <div className="max-[767px]:hidden">
-          <Image priority src={bcard} className="w-[] h-[]" alt="bankless card" />
+          <Image
+            priority
+            src={bcard}
+            className="w-[] h-[]"
+            alt="bankless card"
+          />
         </div>
-        <div className={`${styles['gradient-header-strip']}`}></div>
+        <div className={`${styles["gradient-header-strip"]}`}></div>
       </section>
 
       <section className="mt-[13rem] flex justify-evenly items-center overflow-hidden px-[3rem] w-full max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center max-[767px]:gap-[4rem] max-[767px]:mt-[auto]">
@@ -91,7 +96,7 @@ const LandingPage = () => {
               />
             </div>
             <h2 className="font-semibold text-[2rem] leading-[2.421rem]">
-              {' '}
+              {" "}
               Earn DAO tokens, increase token price
             </h2>
             <p className="text-lg leading-[1.375rem]">
@@ -106,13 +111,11 @@ const LandingPage = () => {
                 priority
                 src={onboard}
                 className=" max-[767px]:m-auto"
-                height={100}
-                width={100}
                 alt="onboard"
               />
             </div>
             <h2 className="font-semibold text-[2rem] leading-[2.421rem]">
-              {' '}
+              {" "}
               Easily onboard new DAO members
             </h2>
             <p className="text-lg leading-[1.375rem]">
@@ -171,8 +174,8 @@ const LandingPage = () => {
                 priority
                 src={community}
                 className="max-[767px]:m-auto"
-                height={100}
-                width={100}
+                height={115}
+                width={115}
                 alt="community"
               />
             </div>
@@ -185,7 +188,7 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className={`${styles['gradient-bottom-strip']}`}></div>
+        <div className={`${styles["gradient-bottom-strip"]}`}></div>
       </section>
       {/* <section className="mt-[10rem] relative bg-[#171717] pt-[20px] pb-[50px]">
 				<h1 className="font-medium text-[2rem] leading-[2.438rem] text-center pb-[6rem]">
