@@ -19,6 +19,7 @@ import support from "../../public/images/support.svg";
 import community from "../../public/images/image.png";
 import API from "@/utils";
 import { useRouter } from "next/router";
+import axios from 'axios';
 
 const LandingPage = () => {
   const router = useRouter();
@@ -30,9 +31,35 @@ const LandingPage = () => {
   ) => {
     ev.preventDefault();
     try {
-      await API.post("/join-waitlist", { email: waitlistEmail });
-      setWaitlistEmail("");
-      router.push("/thank-you");
+
+      //TODO: set this as a GITHUB secret
+      const API_KEY = 'XLzmLAWn9RcqmyHc57xV0g';
+
+      // Data to send in the email
+      const emailData = {
+        email: waitlistEmail,
+        api_key: API_KEY,
+        tags: ['3960977'], //website tag
+      };
+
+      // Send email using ConvertKit API
+      axios({
+        method: 'post',
+        url: `https://api.convertkit.com/v3/forms/4996164/subscribe`,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        data: emailData
+      })
+      .then(response => {
+        setWaitlistEmail("");
+        router.push("/thank-you");
+      })
+      .catch(error => {
+        console.error('Failed to send email:', error.response.data);
+      });
+
+
     } catch (err) {
       console.error("Something went wrong", err);
       toast("Something went wrong");
