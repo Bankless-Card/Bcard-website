@@ -20,6 +20,7 @@ class JoinWaitlistHandler {
     try {
 
       const API_KEY = process.env.CONVERTKIT_API_KEY;
+      console.log(process.env.CONVERTKIT_API_KEY);
 
       // Data to send in the email
       const emailData = {
