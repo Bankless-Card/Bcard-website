@@ -4,6 +4,9 @@
 #
 name: Deploy Next.js site to Pages
 
+env:
+  CONVERTKIT_API_KEY: ${{ secrets.CONVERTKIT_API_KEY }}
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -29,6 +32,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Verify secret
+        run: |
+            echo "Secret value: ${{ secrets.CONVERTKIT_API_KEY }}"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
@@ -87,8 +93,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    env:
-      CONVERTKIT_API_KEY: ${{ secrets.CONVERTKIT_API_KEY }}
     runs-on: ubuntu-latest
     needs: build
     steps:
