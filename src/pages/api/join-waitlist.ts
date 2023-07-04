@@ -48,7 +48,7 @@ class JoinWaitlistHandler {
     } catch (err) {
       console.error('JoinWaitlistHandler-POST', err);
       throw new InternalServerErrorException(
-        err
+        'Oops!!!, Something went wrong. Try again'
       );
     }
   }
