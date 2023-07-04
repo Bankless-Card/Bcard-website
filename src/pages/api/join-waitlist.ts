@@ -19,8 +19,7 @@ class JoinWaitlistHandler {
   async joinWaitlist(@Body(ValidationPipe) dto: JoinWaitlistDto) {
     try {
 
-      const API_KEY = process.env.CONVERTKIT_API_KEY;
-      console.log(process.env.CONVERTKIT_API_KEY);
+      const API_KEY = 'XLzmLAWn9RcqmyHc57xV0g';//process.env.CONVERTKIT_API_KEY;
 
       // Data to send in the email
       const emailData = {

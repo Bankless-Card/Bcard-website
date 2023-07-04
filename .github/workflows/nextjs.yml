@@ -32,9 +32,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify secret
-        run: |
-            echo "Secret value: ${{ secrets.CONVERTKIT_API_KEY }}"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
