@@ -26,21 +26,29 @@ const LandingPage = () => {
   const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
   const [waitlistEmail, setWaitlistEmail] = useState("");
 
+  const MY_API_KEY = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+  const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+  
   const handleSubmitWaitlist: FormEventHandler<HTMLFormElement> = async (
     ev
   ) => {
     ev.preventDefault();
     try {
 
+
       //TODO: set this as a GITHUB secret
-      const API_KEY = 'XLzmLAWn9RcqmyHc57xV0g';
+      // const API_KEY = /* process.env.CONVERTKIT_API_KEY;  */  'XLzmLAWn9RcqmyHc57xV0g';
+      // const API_TAGS = [process.env.CONVERTKIT_API_TAG];
 
       // Data to send in the email
       const emailData = {
         email: waitlistEmail,
-        api_key: API_KEY,
-        tags: ['3960977'], //website tag
+        api_key: MY_API_KEY,
+        tags: [MY_API_TAG],
+        // tags: ['3960977'], //website tag
       };
+
+
 
       // Send email using ConvertKit API
       axios({
@@ -65,6 +73,7 @@ const LandingPage = () => {
       toast("Something went wrong");
     }
   };
+
 
   return (
     <div>

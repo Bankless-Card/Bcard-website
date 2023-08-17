@@ -19,7 +19,9 @@ const ContactUs = () => {
   ) => {
     setContactUsInfo({
       ...contactUsInfo,
-      [ev.target.name]: ev.target.value.trim(),
+      // [ev.target.name]: ev.target.value.trim(),
+      // removing trim to allow for spaces in the message box.
+      [ev.target.name]: ev.target.value,
     });
   };
 
@@ -28,10 +30,22 @@ const ContactUs = () => {
   ) => {
     ev.preventDefault();
     try {
-      await API.post(
-        `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_MAIL_ID}`,
-        contactUsInfo
-      );
+      // THIS SERVICE APPEARS TO BE THE GAP IN THE CONTACT FORM
+      // 
+
+      console.log(process.env.NEXT_PUBLIC_MAIL_ID);
+
+      // await API.post(
+      //   // `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_MAIL_ID}`,
+      //   `https://formsubmit.co/ajax/tom@tomtranmer.com`,
+      //   contactUsInfo
+      // );
+
+      await fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_MAIL_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(contactUsInfo),
+      });
 
       setContactUsInfo({
         discordHandle: '',
