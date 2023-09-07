@@ -32,7 +32,7 @@ const Navbar = () => {
         />
       </Link>
       <div className="hidden md:flex gap-5">
-        <Link href="/for-daos" className={isActive("/for-daos")}>For DAOs</Link>
+        <Link href="/for-daos" className={isActive("/for-daos")}>For Communities</Link>
         <Link href="/for-investors" className={isActive("/for-investors")}>For Investors</Link>
         <a
           href="https://banklesscard.mirror.xyz/"
@@ -71,7 +71,7 @@ const Navbar = () => {
               }}
             >
               <p className="block text-gray-800 hover:text-white py-2">
-                For DAOs
+                For Communities
               </p>
             </Link>
             <Link

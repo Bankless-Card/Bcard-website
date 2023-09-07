@@ -72,10 +72,10 @@ const LandingPage = () => {
         <div className="w-[50%] max-[767px]:w-full">
           <div className={`${styles["gradient-header"]}`}></div>
           <h1 className="text-5xl leading-[3.625rem] font-bold text-center relative z-50 max-[767px]:text-[30px] max-[767px]:leading-[150%]">
-            The card made for DAOs, by BanklessDAO.
+            Support your community with every swipe!
           </h1>
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 max-[767px]:leading-[130%]">
-            Pay in fiat, earn DAO tokens. Support your DAO with every swipe.
+            Bankless Card redirects payment card fees to your favorite community and rewards you with community tokens.
           </p>
           {/* <ConvertKitForm formId={MY_FORM_ID} /> */}
           <form
@@ -124,10 +124,10 @@ const LandingPage = () => {
             </div>
             <h2 className="font-semibold text-[2rem] leading-[2.421rem]">
               {" "}
-              Earn DAO tokens, increase token price
+              Earn community tokens, increase token price
             </h2>
             <p className="text-lg leading-[1.375rem]">
-              Every card purchase earns you cashback in DAO tokens purchased
+              Every swipe earns you cashback in community tokens purchased
               from a DEX, increasing token value.
             </p>
           </div>
@@ -143,11 +143,11 @@ const LandingPage = () => {
             </div>
             <h2 className="font-semibold text-[2rem] leading-[2.421rem]">
               {" "}
-              Easily onboard new DAO members
+              Easily onboard new members
             </h2>
             <p className="text-lg leading-[1.375rem]">
               With our easy-to-use mobile app, you can onboard new friends into
-              your DAO with a simple download.
+              your community with a simple download.
             </p>
           </div>
         </div>
@@ -187,11 +187,11 @@ const LandingPage = () => {
               />
             </div>
             <h2 className="font-semibold text-[2rem] leading-[2.421rem] min-[767px]:text-end">
-              Support your favourite DAOs
+              Support your favourite communities
             </h2>
             <p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
-              A percentage from every card payment goes to your DAO’s treasury,
-              helping to fund their mission.
+              Every time you use a card, 1-2% of the purchase price goes to a bank.
+              Bankless Card redirects some of that fee to your favorite community.
             </p>
           </div>
 

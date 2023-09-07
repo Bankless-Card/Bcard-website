@@ -14,10 +14,10 @@ const ForInvestors = () => {
         <div className={`${styles['ellipse5']}`}></div>
         <div className={`${styles['ellipse2']}`}></div>
         <h1 className="text-[2.25rem] leading-[2.723rem] font-semibold text-center px-[40px]">
-          Powering the financial future of DAOs.
+          Powering the ownership economy.
         </h1>
         <p className="text-lg leading-[1.375rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto px-[40px]">
-          DAOs are the present and future of Web3 communities, and Bankless Card
+          Web3 communities are the future, and Bankless Card
           gives their members a way to support them with every swipe.
         </p>
         <div className="flex justify-center gap-[2rem] mt-[3rem] relative max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center">

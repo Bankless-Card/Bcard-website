@@ -46,10 +46,10 @@ const Product = () => {
             </div>
             <div className="flex flex-col px-[2rem] max-[767px]:px-[1rem] pt-[0.5rem] gap-[1.5rem]">
                 <div className="flex flex-col gap-[1rem] pb-[2rem] border-b-2 border-purple-500">
-                    <h3 className="text-[1.4rem] font-semibold">Taxman: The DAO Income Tax Helper</h3>
-                    <p className="text-[1rem]">Fast, free and built for DAO Contributors, Taxman is a quick and easy tool to help you calculate your DAO income taxes.</p>
+                    <h3 className="text-[1.4rem] font-semibold">Taxman: The Web3 Income Tax Helper</h3>
+                    <p className="text-[1rem]">Fast, free and built for web3 Contributors, Taxman is a quick and easy tool to help you calculate your web3 income taxes.</p>
                 </div>
-                <Link href="https://taxman.justplay.cafe/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
+                <Link href="https://taxman.banklesscard.xyz/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
                     <span className="text-[1rem]">View</span>
                     <Image
                         priority
@@ -71,8 +71,8 @@ const Product = () => {
             </div>
             <div className="flex flex-col px-[2rem] max-[767px]:px-[1rem] pt-[0.5rem] gap-[1.5rem]">
                 <div className="flex flex-col gap-[1rem] pb-[2rem] border-b-2 border-purple-500">
-                    <h3 className="text-[1.4rem] font-semibold">Bankless Card Vault: The Password Manager for DAOs</h3>
-                    <p className="text-[1rem]">The Bankless Card Vault allows DAOs, big and small, to safely share passwords no matter the number of contributors.</p>
+                    <h3 className="text-[1.4rem] font-semibold">Bankless Card Vault: The Password Manager for Communities</h3>
+                    <p className="text-[1rem]">The Bankless Card Vault allows web3 communities, big or small, to safely share passwords.</p>
                 </div>
                 <Link href="https://vault.banklesscard.xyz/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
                     <span className="text-[1rem]">View</span>
