@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
+  images: {
+    unoptimized : true
+  }
+
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
    * must comment the below `i18n` config out.
@@ -11,7 +16,15 @@ const nextConfig = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  output: 'standalone',
+  // output: 'export',
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/ajax/",
+  //       destination: "https://formsubmit.co/ajax/",
+  //     },
+  //   ];
+  // },
 }
 
 module.exports = nextConfig

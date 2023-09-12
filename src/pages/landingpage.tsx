@@ -1,5 +1,6 @@
 import React, { FormEvent, FormEventHandler, useState } from "react";
 import Image from "next/image";
+import Script from "next/script";
 import Link from "next/link";
 import Product from "components/Product";
 import Partner from "components/Partner";
@@ -21,26 +22,33 @@ import API from "@/utils";
 import { useRouter } from "next/router";
 import axios from 'axios';
 
+
+
 const LandingPage = () => {
   const router = useRouter();
   const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
   const [waitlistEmail, setWaitlistEmail] = useState("");
 
+  const MY_API_KEY = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+  const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+  
   const handleSubmitWaitlist: FormEventHandler<HTMLFormElement> = async (
     ev
   ) => {
     ev.preventDefault();
     try {
 
+
       //TODO: set this as a GITHUB secret
-      const API_KEY = 'XLzmLAWn9RcqmyHc57xV0g';
 
       // Data to send in the email
       const emailData = {
         email: waitlistEmail,
-        api_key: API_KEY,
-        tags: ['3960977'], //website tag
+        api_key: MY_API_KEY,
+        tags: [MY_API_TAG],  //website tag
       };
+
+
 
       // Send email using ConvertKit API
       axios({
@@ -66,8 +74,27 @@ const LandingPage = () => {
     }
   };
 
+
   return (
     <div>
+
+        <div className="container">
+          <Script 
+            src='https://www.googletagmanager.com/gtag/js?id=G-WXX5WPLBE4'
+          />
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'G-WXX5WPLBE4', {
+                page_path: window.location.pathname,
+              });
+            `}
+          </Script>
+        </div>
+
       <section className="flex flex-col md:flex-row justify-center gap-[2rem] items-center px-[3rem]">
         <div className="w-[50%] max-[767px]:w-full">
           <div className={`${styles["gradient-header"]}`}></div>
