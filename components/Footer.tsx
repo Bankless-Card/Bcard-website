@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="flex flex-col gap-[1rem] z-[100]">
           <h1 className="font-semibold text-lg leading-[1.375rem]">Bankless Card</h1>
           <Link href="/">Home</Link>
-          <Link href="/for-daos">For DAOs</Link>
+          <Link href="/for-daos">For Communities</Link>
           <Link href="/for-investors">For Investors</Link>
         </div>
         <div className="flex flex-col gap-[1rem] z-[100]">

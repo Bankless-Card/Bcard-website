@@ -22,9 +22,9 @@ const ForDaos = () => {
 					Give your community a way to support your cause.
 				</h1>
 				<p className="text-lg leading-[1.361rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto max-[767px]:p-[30px] relative">
-					BanklessDAO is proud to be partnering with other DAOs, creating a
-					community card for members to earn rewards in their native tokens with
-					every swipe.
+					With Bankless Card, web3 communities get monthly recurring revenue and an easy 
+					way to onboard new contributors.  This gives communities the freedom to focus on 
+					their mission rather than writing grants.
 				</p>
 				<div className="mt-[3rem] flex justify-center gap-[3rem] p-[30px] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center  max-[767px]:mb-0 relative">
 					<div className="max-w-[23.875rem] p-[2rem]  border-4 border-purple-600 border-gradient-to-r">
@@ -62,10 +62,10 @@ const ForDaos = () => {
 							/>
 						</div>
 						<h1 className="font-medium text-lg leading-7 text-center max-[767px]:p-[20px]">
-							DAO Contributors
+							Web3 Contributors
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
-							An easier way to support your DAO through your everyday spending
+							An easy way to support your DAO through your existing, everyday spending.
 						</p>
 					</div>
 					<div>
@@ -80,10 +80,10 @@ const ForDaos = () => {
 							/>
 						</div>
 						<h1 className="font-medium text-lg leading-7 text-center max-[767px]:p-[20px]">
-							DAO Leaders
+							Community Leaders
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
-						Fund your DAO by giving your fans a way to support you without changing behaviour.
+						Fund your community by giving your fans a way to support you without changing behaviour.
 						</p>
 					</div>
 					<div>
@@ -98,7 +98,7 @@ const ForDaos = () => {
 							/>
 						</div>
 						<h1 className="font-medium text-lg leading-7 text-center max-[767px]:p-[20px]">
-							New in Web 3.0?
+							New to Web3?
 						</h1>
 						<p className="text-sm leading-6 text-center max-w-[14.5rem]">
 						Learn key web3 concepts via a simple and educational mobile app.
