@@ -29,7 +29,12 @@ const LandingPage = () => {
   const [ismobileScreen] = useMediaQuery("(max-width: 768px)");
   const [waitlistEmail, setWaitlistEmail] = useState("");
 
-  const MY_API_KEY = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+  // local testing
+  //const MY_API_KEY = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+  //const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
+
+  // production GH Pages
+  const MY_API_KEY = process.env.CONVERTKIT_API_KEY;
   const MY_API_TAG = process.env.NEXT_PUBLIC_CONVERTKIT_API_TAG;
   
   const handleSubmitWaitlist: FormEventHandler<HTMLFormElement> = async (

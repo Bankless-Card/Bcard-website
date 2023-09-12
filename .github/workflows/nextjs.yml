@@ -6,6 +6,8 @@ name: Deploy Next.js site to Pages
 
 env:
   CONVERTKIT_API_KEY: ${{ secrets.CONVERTKIT_API_KEY }}
+  CONVERTKIT_API_TAG: ${{ secrets.CONVERTKIT_API_TAG }}
+  PUBLIC_MAIL_ID: ${{ secrets.PUBLIC_MAIL_ID }}
 
 on:
   # Runs on pushes targeting the default branch
