@@ -1282,10 +1282,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/swc-darwin-x64@13.2.1":
+"@next/swc-darwin-arm64@13.2.1":
   version "13.2.1"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-13.2.1.tgz"
-  integrity sha512-HGqVqmaZWj6zomqOZUVbO5NhlABL0iIaxTmd0O5B0MoMa5zpDGoaHSG+fxgcWMXcGcxmUNchv1NfNOYiTKoHOg==
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.2.1.tgz"
+  integrity sha512-gvqm+fGMYxAkwBapH0Vvng5yrb6HTkIvZfY4oEdwwYrwuLdkjqnJygCMgpNqIFmAHSXgtlWxfYv1VC8sjN81Kw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -41,7 +41,7 @@ const ContactUs = () => {
       //   contactUsInfo
       // );
 
-      await fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_MAIL_ID}`, {
+      await fetch(`https://formsubmit.co/ajax/links@banklesscard.xyz`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(contactUsInfo),
