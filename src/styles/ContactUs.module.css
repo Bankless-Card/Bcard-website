@@ -1,0 +1,37 @@
+
+.ellipse1::after{
+    content: "";
+    width: 536px;
+    height: 50%;
+    background: #5DD9C1;
+    position: absolute;
+    top: -50%;
+    filter: blur(200px);
+}
+.ellipse2::after{
+    content: "";
+    width: 536px;
+    height: 20%;
+    background: #AD43DF;
+    position: absolute;
+    top: 15%;
+    left: -20%;
+    filter: blur(200px);
+}
+
+@media (max-width: 767px){
+    .ellipse1::after{
+        display: none;
+    }
+    .ellipse3::after{
+        content: "";
+        width: 400px;
+        height: 500px;
+        background: #5DD9C1;
+        position: absolute;
+        right: -30%;
+        bottom: 20%;
+        opacity: 0.3;
+        filter: blur(200px);
+    }
+}

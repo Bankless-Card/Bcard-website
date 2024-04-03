@@ -1,0 +1,21 @@
+.ellipse2::after{
+    content: "";
+    width: 536px;
+    height: 50%;
+    background: #5DD9C1;
+    position: absolute;
+    top: 20%;
+    left: -40%;
+    filter: blur(200px);
+}
+.ellipse5::after{
+    content: "";
+    width: 536px;
+    height: 536px;
+    right: -300px;
+    top: 0px;
+    background: #AD43DF;
+    position: absolute;
+    opacity: 0.7;
+    filter: blur(200px);
+}

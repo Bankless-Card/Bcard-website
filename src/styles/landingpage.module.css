@@ -1,0 +1,86 @@
+/* gradient style for landing page */
+.gradient-header{
+    width: 536px;
+    height: 536px;
+    border-radius: 50%;
+    background: #AD43DF;
+    filter: blur(200px);
+    position: absolute;
+    left: -30%;
+    top: -30%;
+}
+.gradient-header-strip{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 668px;
+    right: 193px;
+    transform: rotate(346deg);
+}
+.gradient-header-strip::after{
+    content: url("data:image/svg+xml,%3Csvg%20width%3D%22558%22%20height%3D%22806%22%20viewBox%3D%220%200%20558%20806%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2%20170C235.5%206.5%20333.5%20-162%20663.5%20321C952.267%20743.649%20693%20796%20620.5%20803%22%20stroke%3D%22url(%23paint0_linear_507_1406)%22%20stroke-width%3D%226%22%2F%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22paint0_linear_507_1406%22%20x1%3D%2221.5%22%20y1%3D%22171.5%22%20x2%3D%22264.5%22%20y2%3D%22114%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23AD43DF%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235DD9C1%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    filter: blur(3px);   
+}
+.gradient-bottom-strip{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 957px;
+    right: 778px;
+    transform: rotate(165deg);
+}
+.gradient-bottom-strip::after{
+    content: url("data:image/svg+xml,%3Csvg%20width%3D%22558%22%20height%3D%22806%22%20viewBox%3D%220%200%20558%20806%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2%20170C235.5%206.5%20333.5%20-162%20663.5%20321C952.267%20743.649%20693%20796%20620.5%20803%22%20stroke%3D%22url(%23paint0_linear_507_1406)%22%20stroke-width%3D%226%22%2F%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22paint0_linear_507_1406%22%20x1%3D%2221.5%22%20y1%3D%22171.5%22%20x2%3D%22264.5%22%20y2%3D%22114%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23AD43DF%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235DD9C1%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    filter: blur(3px);   
+}
+
+@media (max-width: 767px){
+    .gradient-header{
+        width: 300px;
+        height: 450px;
+        left: -40%;
+        top: 10%;
+    }
+    .gradient-header-strip{
+        display: none;
+    }
+    .gradient-bottom-strip{
+        display: none;
+    }
+}
+
+.ellipse1{
+    width: 536px;
+    height: 50%;
+    background: #AD43DF;
+    position: absolute;
+    left: -20%;
+    opacity: 0.4;
+    filter: blur(200px);
+}
+.ellipse2{
+    width: 536px;
+    height: 50%;
+    background: #5DD9C1;
+    position: absolute;
+    right: -20%;
+    opacity: 0.3;
+    filter: blur(200px);
+}
+@media (max-width: 767px){
+    .ellipse2{
+        display: none;
+    }
+}

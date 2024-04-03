@@ -1,0 +1,39 @@
+/* @import url('~@glidejs/glide/dist/css/glide.core.min.css');
+@import url('~@glidejs/glide/dist/css/glide.theme.min.css'); */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  /* override input text to white for dark mode */
+  .text-black {
+    color: #fff;
+  }
+}

@@ -1,0 +1,17 @@
+@media (min-width: 767px){
+    .ellipse{
+        overflow: hidden;
+    }
+    
+    .ellipse::after{
+        content: "";
+        width: 536px;
+        height: 536px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #AD43DF;
+        opacity: 0.2;
+        filter: blur(200px);
+    }
+}
