@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from '@/styles/Navbar.module.css'
 
-import logo from "../public/images/logo.svg";
+import logo from "../public/images/new-logo.png";
 import hamburger from "../public/images/hamburger.svg";
 
 const Navbar = () => {
