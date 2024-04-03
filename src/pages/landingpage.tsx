@@ -107,7 +107,7 @@ const LandingPage = () => {
             Support your community with every swipe!
           </h1>
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 max-[767px]:leading-[130%]">
-            Bankless Card redirects payment card fees to your favorite community and rewards you with community tokens.
+            BCard redirects payment card fees to your favorite community and rewards you with community tokens.
           </p>
           {/* <ConvertKitForm formId={MY_FORM_ID} /> */}
           <form
@@ -223,7 +223,7 @@ const LandingPage = () => {
             </h2>
             <p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
               Every time you use a card, 1-2% of the purchase price goes to a bank.
-              Bankless Card redirects some of that fee to your favorite community.
+              BCard redirects some of that fee to your favorite community.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ const LandingPage = () => {
               The community-owned card!
             </h2>
             <p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
-              Bankless Card is by DAOs, for DAOs. Unlike centralized crypto
+              BCard is by DAOs, for DAOs. Unlike centralized crypto
               cards, you have a say in how we build the future.
             </p>
           </div>
