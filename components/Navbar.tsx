@@ -28,7 +28,7 @@ const Navbar = () => {
           className=""
           height={56.97}
           width={179}
-          alt="bankless card"
+          alt="BCard"
         />
       </Link>
       <div className="hidden md:flex gap-5">

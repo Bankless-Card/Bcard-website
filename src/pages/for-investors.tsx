@@ -17,7 +17,7 @@ const ForInvestors = () => {
           Powering the ownership economy.
         </h1>
         <p className="text-lg leading-[1.375rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto px-[40px]">
-          Web3 communities are the future, and Bankless Card
+          Web3 communities are the future, and BCard
           gives their members a way to support them with every swipe.
         </p>
         <div className="flex justify-center gap-[2rem] mt-[3rem] relative max-[767px]:flex-col max-[767px]:items-center max-[767px]:justify-center">

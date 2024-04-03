@@ -135,7 +135,7 @@ const LandingPage = () => {
             priority
             src={bcard}
             className="w-[] h-[]"
-            alt="bankless card"
+            alt="BCard"
           />
         </div>
         <div className={`${styles["gradient-header-strip"]}`}></div>
@@ -190,7 +190,7 @@ const LandingPage = () => {
               priority
               src={phone}
               className=""
-              alt="bankless card"
+              alt="BCard"
               height={379}
               width={339}
             />
@@ -199,7 +199,7 @@ const LandingPage = () => {
               priority
               src={phone}
               className=""
-              alt="bankless card"
+              alt="BCard"
               height={379}
               width={250}
             />

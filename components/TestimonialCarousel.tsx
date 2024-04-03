@@ -48,7 +48,7 @@ const TestimonialCarousel = () => {
 								alt=""
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
-								It was very easy and intuitive for me to use the Bankless Card
+								It was very easy and intuitive for me to use the BCard
 								app. I think it’s a great entry point for new web3 users to
 								educate themselves and participate in their communities.
 							</p>
@@ -68,7 +68,7 @@ const TestimonialCarousel = () => {
 								alt=""
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
-								The Bankless Card app provides ease and accessibility to people
+								The BCard app provides ease and accessibility to people
 								new to web3. Communities should totally use it to onboard their
 								users. I was very impressed with the simplistic and yet elegant
 								design.
@@ -111,7 +111,7 @@ const TestimonialCarousel = () => {
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
 								Very impressed with the thought went into the design of the
-								Bankless Card app. Makes it simple for anyone to join web3 and
+								BCard app. Makes it simple for anyone to join web3 and
 								contribute towards missions they care about.
 							</p>
 							<p className="font-bold">IsraelRex</p>

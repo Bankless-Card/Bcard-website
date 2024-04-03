@@ -21,11 +21,11 @@ const Footer = () => {
             className="z-[100]"
             height={94}
             width={82.9}
-            alt="bankless card"
+            alt="BCard"
           />
         </div>
         <div className="flex flex-col gap-[1rem] z-[100]">
-          <h1 className="font-semibold text-lg leading-[1.375rem]">Bankless Card</h1>
+          <h1 className="font-semibold text-lg leading-[1.375rem]">BCard</h1>
           <Link href="/">Home</Link>
           <Link href="/for-daos">For Communities</Link>
           <Link href="/for-investors">For Investors</Link>
@@ -68,10 +68,10 @@ const Footer = () => {
           <hr className="border-[#313131]" />
         </div>
         <div className={`flex justify-between items-center z-[100] ${styles['content-down']}`}>
-          <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 Bankless Card. All Rights Reserved</p>
+          <p className="text-[0.875rem] text-gray-400  font-medium">© Copyright 2023 BCard. All Rights Reserved</p>
           <div className="flex items-center gap-3  ">
           <div className=" z-[100]">
-          <a  href="https://twitter.com/BanklessCard" target="_blank" rel="noreferrer">
+          <a  href="https://twitter.com/getbcard" target="_blank" rel="noreferrer">
             <Image
               priority
               src={twitter}

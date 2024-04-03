@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bankless Card</title>
+        <title>BCard Community</title>
         <meta name='description' content='Support your community with every swipe!' />
       </Head>
        
