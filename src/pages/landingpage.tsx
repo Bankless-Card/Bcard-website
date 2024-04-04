@@ -12,7 +12,8 @@ import { useMediaQuery } from "@chakra-ui/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import bcard from "../../public/images/bcard.png";
+import bcard from "../../public/images/bcard-glow.png";
+import bcardMobile from "../../public/images/bcard-home-hero.png";
 import earn from "../../public/images/earn.svg";
 import onboard from "../../public/images/onboard.svg";
 import phone from "../../public/images/phone.svg";
@@ -134,6 +135,14 @@ const LandingPage = () => {
           <Image
             priority
             src={bcard}
+            className="w-[] h-[]"
+            alt="BCard"
+          />
+        </div>
+        <div className="min-[767px]:hidden">
+          <Image
+            priority
+            src={bcardMobile}
             className="w-[] h-[]"
             alt="BCard"
           />
