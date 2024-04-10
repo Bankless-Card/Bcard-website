@@ -117,7 +117,7 @@ const HeroSection = () => {
           >
             <div className="w-full">
               <div className="w-full pl-4 pb-4">
-                {/* es nez ka pataisit vinu par apli so for now buus goofy, pectam var kkadu svg or sum tur ielikt */}
+                {/* too lazy to make it circular, so it will look goofy for now. Could change to an svg later. */}
                 <span className="rounded-[50%] border-2 border-solid"></span>
                 <span className="text-gray-500">Statistics</span>
               </div>
@@ -216,6 +216,85 @@ const HeroSection = () => {
                 perspiciatis.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="ComparisonSection"
+        className="content-center justify-center bg-gray-600 py-12"
+      >
+        <div
+          id="ComparisonContentContainer"
+          className="flex h-full grow flex-col"
+        >
+          <div
+            id="ComparisonText"
+            className="mb-12 flex flex-col content-center justify-center"
+          >
+            <h2 className="m-auto">It is no comparison</h2>
+            <p className="m-auto pt-4">
+              &quot;If you don&apos;t try this app, you won&apos;t become the
+              superhero you were meant to be&quot;
+            </p>
+          </div>
+          <div id="ComparisonTable" className="mx-48">
+            <table className="h-full w-full rounded-xl shadow-md">
+              <thead>
+                <tr>
+                  <th className=""></th>
+                  <th>BCard</th>
+                  <th>Juno finance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td className="">O</td>
+                  <td>O</td>
+                </tr>
+                <tr className="even:bg-slate-blue-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>O</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>O</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+                <tr className="even:bg-blue-gray-50/50">
+                  <td>Selling Point</td>
+                  <td>O</td>
+                  <td>X</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

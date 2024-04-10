@@ -11,7 +11,10 @@ export default function Home() {
     <>
       <Head>
         <title>Bankless Card</title>
-        <meta name="description" content="Support your community with every swipe!" />
+        <meta
+          name="description"
+          content="Support your community with every swipe!"
+        />
       </Head>
 
       <Navbar />
