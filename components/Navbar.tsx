@@ -4,7 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from '@/styles/Navbar.module.css'
 
+<<<<<<< HEAD
 import logo from "../public/images/logo.svg";
+=======
+import logo from "../public/images/new-logo.png";
+>>>>>>> origin2/repo-merger
 import hamburger from "../public/images/hamburger.svg";
 
 const Navbar = () => {
@@ -28,7 +32,11 @@ const Navbar = () => {
           className=""
           height={56.97}
           width={179}
+<<<<<<< HEAD
           alt="bankless card"
+=======
+          alt="BCard"
+>>>>>>> origin2/repo-merger
         />
       </Link>
       <div className="hidden md:flex gap-5">

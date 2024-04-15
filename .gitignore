@@ -34,6 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
 
 #local images (layout png etc)
 /localFiles
+=======
+>>>>>>> origin2/repo-merger

@@ -12,7 +12,12 @@ import { useMediaQuery } from "@chakra-ui/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+<<<<<<< HEAD
 import bcard from "../../public/images/bcard.png";
+=======
+import bcard from "../../public/images/bcard-glow.png";
+import bcardMobile from "../../public/images/bcard-home-hero.png";
+>>>>>>> origin2/repo-merger
 import earn from "../../public/images/earn.svg";
 import onboard from "../../public/images/onboard.svg";
 import phone from "../../public/images/phone.svg";
@@ -107,7 +112,11 @@ const LandingPage = () => {
             Support your community with every swipe!
           </h1>
           <p className="text-lg leading-[1.375rem] mt-[2rem] text-center relative z-50 max-[767px]:leading-[130%]">
+<<<<<<< HEAD
             Bankless Card redirects payment card fees to your favorite community and rewards you with community tokens.
+=======
+            BCard redirects payment card fees to your favorite community and rewards you with community tokens.
+>>>>>>> origin2/repo-merger
           </p>
           {/* <ConvertKitForm formId={MY_FORM_ID} /> */}
           <form
@@ -135,7 +144,19 @@ const LandingPage = () => {
             priority
             src={bcard}
             className="w-[] h-[]"
+<<<<<<< HEAD
             alt="bankless card"
+=======
+            alt="BCard"
+          />
+        </div>
+        <div className="min-[767px]:hidden">
+          <Image
+            priority
+            src={bcardMobile}
+            className="w-[] h-[]"
+            alt="BCard"
+>>>>>>> origin2/repo-merger
           />
         </div>
         <div className={`${styles["gradient-header-strip"]}`}></div>
@@ -190,7 +211,11 @@ const LandingPage = () => {
               priority
               src={phone}
               className=""
+<<<<<<< HEAD
               alt="bankless card"
+=======
+              alt="BCard"
+>>>>>>> origin2/repo-merger
               height={379}
               width={339}
             />
@@ -199,7 +224,11 @@ const LandingPage = () => {
               priority
               src={phone}
               className=""
+<<<<<<< HEAD
               alt="bankless card"
+=======
+              alt="BCard"
+>>>>>>> origin2/repo-merger
               height={379}
               width={250}
             />
@@ -223,7 +252,11 @@ const LandingPage = () => {
             </h2>
             <p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
               Every time you use a card, 1-2% of the purchase price goes to a bank.
+<<<<<<< HEAD
               Bankless Card redirects some of that fee to your favorite community.
+=======
+              BCard redirects some of that fee to your favorite community.
+>>>>>>> origin2/repo-merger
             </p>
           </div>
 
@@ -242,7 +275,11 @@ const LandingPage = () => {
               The community-owned card!
             </h2>
             <p className="text-lg leading-[1.375rem] min-[767px]:text-end px-[1rem]">
+<<<<<<< HEAD
               Bankless Card is by DAOs, for DAOs. Unlike centralized crypto
+=======
+              BCard is by DAOs, for DAOs. Unlike centralized crypto
+>>>>>>> origin2/repo-merger
               cards, you have a say in how we build the future.
             </p>
           </div>

@@ -16,7 +16,11 @@ const Product = () => {
                     priority
                     src={taxman}
                     className="w-[100%]"
+<<<<<<< HEAD
                     alt="bankless card"
+=======
+                    alt="BCard"
+>>>>>>> origin2/repo-merger
                 />
             </div>
             <div className="flex flex-col px-[2rem] max-[767px]:px-[1rem] pt-[0.5rem] gap-[1.5rem]">
@@ -24,13 +28,21 @@ const Product = () => {
                     <h3 className="text-[1.4rem] font-semibold">Taxman: The Web3 Income Tax Helper</h3>
                     <p className="text-[1rem]">Fast, free and built for web3 Contributors, Taxman is a quick and easy tool to help you calculate your web3 income taxes.</p>
                 </div>
+<<<<<<< HEAD
                 <Link href="https://taxman.banklesscard.xyz/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
+=======
+                <Link href="https://taxman.getbcard.io/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
+>>>>>>> origin2/repo-merger
                     <span className="text-[1rem]">View</span>
                     <Image
                         priority
                         src={linkIcon}
                         className="w-[15px]"
+<<<<<<< HEAD
                         alt="bankless card"
+=======
+                        alt="BCard"
+>>>>>>> origin2/repo-merger
                     />
                 </Link>
             </div>
@@ -41,13 +53,22 @@ const Product = () => {
                     priority
                     src={vault}
                     className="w-[100%]"
+<<<<<<< HEAD
                     alt="bankless card"
+=======
+                    alt="BCard"
+>>>>>>> origin2/repo-merger
                 />
             </div>
             <div className="flex flex-col px-[2rem] max-[767px]:px-[1rem] pt-[0.5rem] gap-[1.5rem]">
                 <div className="flex flex-col gap-[1rem] pb-[2rem] border-b-2 border-purple-500">
+<<<<<<< HEAD
                     <h3 className="text-[1.4rem] font-semibold">Bankless Card Vault: The Password Manager for Communities</h3>
                     <p className="text-[1rem]">The Bankless Card Vault allows web3 communities, big or small, to safely share passwords.</p>
+=======
+                    <h3 className="text-[1.4rem] font-semibold">BCard Vault: The Password Manager for Communities</h3>
+                    <p className="text-[1rem]">The BCard Vault allows web3 communities, big or small, to safely share passwords.</p>
+>>>>>>> origin2/repo-merger
                 </div>
                 <Link href="https://vault.banklesscard.xyz/" className="flex justify-start items-center gap-[0.5rem] pb-[1rem]">
                     <span className="text-[1rem]">View</span>
@@ -55,7 +76,11 @@ const Product = () => {
                         priority
                         src={linkIcon}
                         className="w-[15px]"
+<<<<<<< HEAD
                         alt="bankless card"
+=======
+                        alt="BCard"
+>>>>>>> origin2/repo-merger
                     />
                 </Link>
             </div>
@@ -66,7 +91,11 @@ const Product = () => {
                     priority
                     src={blog}
                     className="w-[100%]"
+<<<<<<< HEAD
                     alt="bankless card"
+=======
+                    alt="BCard"
+>>>>>>> origin2/repo-merger
                 />
             </div>
             <div className="flex flex-col px-[2rem] max-[767px]:px-[1rem] pt-[0.5rem] gap-[1.5rem]">
@@ -80,7 +109,11 @@ const Product = () => {
                         priority
                         src={linkIcon}
                         className="w-[15px]"
+<<<<<<< HEAD
                         alt="bankless card"
+=======
+                        alt="BCard"
+>>>>>>> origin2/repo-merger
                     />
                 </Link>
             </div>

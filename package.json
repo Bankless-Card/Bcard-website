@@ -1,6 +1,10 @@
 {
   "name": "bcard-website",
+<<<<<<< HEAD
   "version": "0.1.0",
+=======
+  "version": "0.1.1",
+>>>>>>> origin2/repo-merger
   "homepage": "https://bankless-card.github.io/Bcard-website",
   "private": true,
   "scripts": {
@@ -38,8 +42,11 @@
     "@types/glidejs__glide": "^3.6.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+<<<<<<< HEAD
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
+=======
+>>>>>>> origin2/repo-merger
     "tailwindcss": "^3.2.7"
   },
   "resolutions": {

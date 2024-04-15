@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -5,11 +6,20 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "components/Navbar";
 import LandingPage from "./landingpage";
 import HeroSection from "components/HeroSection";
+=======
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
+import Navbar from 'components/Navbar'
+import LandingPage from './landingpage'
+>>>>>>> origin2/repo-merger
 
 export default function Home() {
   return (
     <>
       <Head>
+<<<<<<< HEAD
         <title>Bankless Card</title>
         <meta
           name="description"
@@ -22,4 +32,14 @@ export default function Home() {
       {/* <LandingPage /> */}
     </>
   );
+=======
+        <title>BCard Community</title>
+        <meta name='description' content='Support your community with every swipe!' />
+      </Head>
+       
+      <Navbar />
+      <LandingPage />
+    </>
+  )
+>>>>>>> origin2/repo-merger
 }

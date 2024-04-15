@@ -48,7 +48,11 @@ const TestimonialCarousel = () => {
 								alt=""
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
+<<<<<<< HEAD
 								It was very easy and intuitive for me to use the Bankless Card
+=======
+								It was very easy and intuitive for me to use the BCard
+>>>>>>> origin2/repo-merger
 								app. I think it’s a great entry point for new web3 users to
 								educate themselves and participate in their communities.
 							</p>
@@ -68,7 +72,11 @@ const TestimonialCarousel = () => {
 								alt=""
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
+<<<<<<< HEAD
 								The Bankless Card app provides ease and accessibility to people
+=======
+								The BCard app provides ease and accessibility to people
+>>>>>>> origin2/repo-merger
 								new to web3. Communities should totally use it to onboard their
 								users. I was very impressed with the simplistic and yet elegant
 								design.
@@ -111,7 +119,11 @@ const TestimonialCarousel = () => {
 							/>
 							<p className="max-w-[18.75rem] px-[1rem]">
 								Very impressed with the thought went into the design of the
+<<<<<<< HEAD
 								Bankless Card app. Makes it simple for anyone to join web3 and
+=======
+								BCard app. Makes it simple for anyone to join web3 and
+>>>>>>> origin2/repo-merger
 								contribute towards missions they care about.
 							</p>
 							<p className="font-bold">IsraelRex</p>

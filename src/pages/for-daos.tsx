@@ -22,7 +22,11 @@ const ForDaos = () => {
 					Give your community a way to support your cause.
 				</h1>
 				<p className="text-lg leading-[1.361rem] text-center font-normal mt-[3rem] max-w-[49.5rem] mx-auto max-[767px]:p-[30px] relative">
+<<<<<<< HEAD
 					With Bankless Card, web3 communities get monthly recurring revenue and an easy 
+=======
+					With BCard, web3 communities get monthly recurring revenue and an easy 
+>>>>>>> origin2/repo-merger
 					way to onboard new contributors.  This gives communities the freedom to focus on 
 					their mission rather than writing grants.
 				</p>
