@@ -46,6 +46,18 @@
     filter: blur(3px);   
 }
 
+.mainCTA {
+    text-align: center;
+}
+.mainCTAButton {
+    font-weight: bold;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(147, 51, 234), rgb(79, 70, 229));
+}
+
 @media (max-width: 767px){
     .gradient-header{
         width: 300px;
